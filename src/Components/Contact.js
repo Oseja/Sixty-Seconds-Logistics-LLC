@@ -110,15 +110,15 @@ export default function Contact(props) {
       <section>
         <div className="addressMain">
           <div className="IconsMain">
-            <div className="phone" style={{backgroundColor: props.mode === 'light' ? 'black' : 'white'}}>
+            <div className="phone" style={{backgroundColor: props.mode === 'light' ? 'black' : 'white'}} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <i className='fas fa-phone'></i><span>Phone Number:</span><br />
               <Link to="tel:+1(832) 422-7704" style={{color: props.mode === 'light' ? 'white' : 'black'}}>+1(832) 422-7704</Link>
             </div>
-            <div className="address" style={{backgroundColor: props.mode === 'light' ? 'black' : 'white'}}>
+            <div className="address" style={{backgroundColor: props.mode === 'light' ? 'black' : 'white'}} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <i className='fas fa-map-marker-alt'></i><span>Address:</span> <br />
               <h1 style={{color: props.mode === 'light' ? 'white' : 'black'}}>2525 S Voss Rd, Houston TX 77057.</h1>
             </div>
-            <div className="email" style={{backgroundColor: props.mode === 'light' ? 'black' : 'white'}}>
+            <div className="email" style={{backgroundColor: props.mode === 'light' ? 'black' : 'white'}} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <i className='fas fa-envelope'></i><span>Email:</span> <br />
               <Link to="mailto:dispatch@sixtysecondslogistics.com" style={{color: props.mode === 'light' ? 'white' : 'black'}}>dispatch@sixtysecondslogistics.com</Link>
             </div>
@@ -129,8 +129,9 @@ export default function Contact(props) {
         <div className="formMain">
           <div className="form" style={{backgroundColor: props.mode === 'light' ? 'black' : 'white'}}>
             <form method='post' onSubmit={submitForm} style={{color: props.mode === 'light' ? 'white' : 'black'}}>
-            <h1 className="form-heading">Get Free Quote Now</h1>
+            <h1 className="form-heading" onMouseEnter={textEnter} onMouseLeave={textLeave}>Get Free Quote Now</h1>
             <input
+            onMouseEnter={textEnter} onMouseLeave={textLeave}
             style={{color: props.mode === 'light' ? 'white' : 'black', border: props.mode === 'light' ? '1px solid white' : '1px solid black'}}
               type="text"
               placeholder="Enter Your Name"
@@ -142,6 +143,7 @@ export default function Contact(props) {
               value={data.cname}
             />
             <input
+            onMouseEnter={textEnter} onMouseLeave={textLeave}
             style={{color: props.mode === 'light' ? 'white' : 'black', border: props.mode === 'light' ? '1px solid white' : '1px solid black'}}
               type="email"
               placeholder="Enter Your Email"
@@ -153,6 +155,7 @@ export default function Contact(props) {
             />
             <div className="phone-country">
               <PhoneInput
+              onMouseEnter={textEnter} onMouseLeave={textLeave}
                 country={'us'} 
                 value={data.cphone}
                 className="Countrycode-input PhoneInput"
@@ -183,6 +186,7 @@ export default function Contact(props) {
                 }}
               />
               <input
+              onMouseEnter={textEnter} onMouseLeave={textLeave}
               style={{color: props.mode === 'light' ? 'white' : 'black', border: props.mode === 'light' ? '1px solid white' : '1px solid black'}}
                 type="date"
                 className="form-date"
@@ -192,6 +196,7 @@ export default function Contact(props) {
                 value={data.cdate}
               />
                <textarea
+               onMouseEnter={textEnter} onMouseLeave={textLeave}
                style={{color: props.mode === 'light' ? 'white' : 'black', border: props.mode === 'light' ? '1px solid white' : '1px solid black'}}
               placeholder="Message"
               name="cmessage"
@@ -201,13 +206,13 @@ export default function Contact(props) {
               value={data.cmessage}
             ></textarea>
             <div className="buttonForm">
-            <button type="submit" className="form-btn" name="savebtn">Submit</button>
+            <button type="submit" className="form-btn" name="savebtn" onMouseEnter={textEnter} onMouseLeave={textLeave}>Submit</button>
             </div>
             </div>
             </form>
           </div>
           <div className="formImage">
-            <img src={FormImg} alt="iamge form" />
+            <img src={FormImg} alt="iamge form" onMouseEnter={textEnter} onMouseLeave={textLeave}/>
           </div>
         </div>
       </section>

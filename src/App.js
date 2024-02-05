@@ -6,6 +6,7 @@ import Contact from './Components/Contact'
 import Navbar from './Components/Navbar'
 import Alert from './Components/Alert'
 import Footer from './Components/Footer'
+import PowerOnly from './Components/PowerOnly'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 export default function App() {
 
@@ -45,6 +46,7 @@ export default function App() {
         <Route path="/About" element={<About mode={mode} toggleMode={toggleMode} />} />
         <Route path="/Services" element={<Services mode={mode} toggleMode={toggleMode}/>} />
         <Route path="/Contact" element={<Contact mode={mode} toggleMode={toggleMode} />} />
+        <Route path="/Poweronly" element={<PowerOnly mode={mode} toggleMode={toggleMode} />} />
         </Routes>
         <Footer mode={mode} toggleMode={toggleMode}/>
       </BrowserRouter>

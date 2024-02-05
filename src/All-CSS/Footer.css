@@ -29,7 +29,9 @@ footer{
     padding: 10px 10px 0px 10px;
 }
 .footer-option,.footer-work, .footer-contact,.footer-socials{
-    margin: 20px 0px 0px 20px;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 10px;
+    border-left: 1px solid ;
 }
 .footer-option h1, .footer-work h1, .footer-contact h1{
     font-size: 2vh;
@@ -43,7 +45,7 @@ footer{
     align-items: center;
     font-size: 1.5vh;
     text-align: left;
-    margin: 40px 20px;
+    margin: 40px 0px;
 }
 
 .footer-links,.footer-linkstwo{
@@ -126,10 +128,17 @@ footer{
 }
   .footer-option,.footer-work, .footer-contact{
     margin: 60px 0px 0px 0px;
+    border-left: none;
 }
   .footer-contact ul, .footer-work ul, .footer-option ul{
     margin: 0px;
     text-align: left;
+    border-bottom: 1px solid;
+    border-left: 0px solid;
+    padding: 20px 0px;
+  }
+  .footer-socials{
+    border-left: none;
   }
   .footer-socials h1{
     padding: 0px 0px 0px 20px;
