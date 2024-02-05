@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.NavbarItems{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    padding: 0 30px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    width: 95vw;
+    height: 9vh;
+    border-radius: 13px;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1000;
+}
+
+.logo{
+    color: white;
+    justify-self: start;
+    cursor: pointer;
+}
+
+.fa-react{
+    margin-left: .2rem;
+    font-size: 1.6rem;
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    list-style: none;
+    align-items: center;
+    justify-content: end;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: #222;
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+}
+
+.nav-links i{
+    padding-right: 10px;
+}
+
+.nav-links:hover{
+    background-color: rgb(80, 80, 238);
+    transition: all .2s ease-in-out;
+    border-radius: 4px;
+    color: white;
+}
+
+.fa-bars,
+.fa-times{
+    color: white;
+}
+
+.menu-icons{
+    display: none;
+}
+.modeIcon{
+ cursor: pointer;
+ margin-left: 15%;
+}
+.dark-mode-text {
+    color: white; /* Set the desired text color for dark mode */
+  }
+
+.nav-links-mobile{
+  padding: .5rem 1rem;
+  white-space: nowrap;
+  background-color: white;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #222;
+  font-weight: 500;
+}
+
+.App-logo{
+    padding: 20px 10px;
+    height: 15vh;
+}
+
+.fa-times,
+.fa-bars{
+    color: #222;
+}
+
+@media screen and (max-width: 850px) {
+    .NavbarItems{
+        z-index: 99;
+        /* margin-top: 20px; */
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, .25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+        backdrop-filter: blur(4px);
+        border-radius: 13px;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -110%;
+        align-items: stretch;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+    .App-logo{
+        height: 15vh;
+    }
+
+    .nav-menu.active{
+      left: 0%;   
+    }
+    .nav-links{
+        display: block;
+        widows: 100%;
+        padding: 2rem 0;
+        color: #222;
+    }
+    .nav-links:hover{
+        background-color: rgba(66, 66, 66, 0.25);
+        backdrop-filter: blur(4px);
+        color: #222;
+    }
+    .menu-icons{
+        display: block;
+    }
+    .nav-links-mobile{
+        padding: 1.5rem;
+        display: block;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        width: 80%;
+        margin: auto;
+    }
+    .dark-mode-text {
+        color: white; /* Set the desired text color for dark mode */
+      }
+}

@@ -1,0 +1,76 @@
+import React, { useEffect, useState } from 'react'
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import '../All-CSS/About.css'
+export default function About(props) {
+  const [mousePosition, setMousePosition] = useState({
+    x: 0,
+    y: 0
+  });
+  const [cursorVariants, setcursorVariants] = useState("default");
+
+  useEffect(() => {
+    const mouseMove = e => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY
+      })
+    }
+    window.addEventListener("mousemove", mouseMove);
+    return () => {
+      window.removeEventListener("mousemove", mouseMove);
+    }
+  }, []);
+
+  const variants = {
+    default: {
+      x: mousePosition.x - 16,
+      y: mousePosition.y - 16
+    },
+    text: {
+      height: 150,
+      width: 150,
+      x: mousePosition.x - 75,
+      y: mousePosition.y - 75
+    }
+  }
+
+  const textEnter = () => setcursorVariants("text");
+  const textLeave = () => setcursorVariants("default");
+  return (
+    <>
+      <motion.div className="cursor"
+        variants={variants}
+        animate={cursorVariants} />
+      <section>
+        <div className="aboutBanner">
+          <h1>Sixty Seconds Logistics LLC | About  </h1>
+          <span><h5><Link to="/">Home</Link>&gt; About</h5></span>
+        </div>
+      </section>
+      <section>
+        <div className="mainabout">
+          <div className="who">
+            <div className="headingWho">
+              <h1 onMouseEnter={textEnter} onMouseLeave={textLeave}>Who We Are?</h1>
+            </div>
+            <div className="contentWho" style={{backgroundColor: props.mode === 'dark' ? 'white': 'black', color: props.mode === 'dark' ? 'black' : 'white'}}>
+              <p onMouseEnter={textEnter} onMouseLeave={textLeave}>At Sixty Seconds Logistics, we go beyond the traditional perception of a truck logistics company; we are your trusted partners in the journey of logistical optimization. As one of the earliest innovators in the field of truck logistics in the United States, Sixty Seconds Logistics has been instrumental in reshaping the industry landscape since our establishment.</p>
+            </div>
+          </div>
+          <div className="mission" >
+            <div className="contentMission" style={{backgroundColor: props.mode === 'dark' ? 'white': 'black', color: props.mode === 'dark' ? 'black' : 'white'}}>
+              <p onMouseEnter={textEnter} onMouseLeave={textLeave}>Our mission at Sixty Seconds Logistics is straightforward yet impactful: to empower businesses and individuals with seamless logistical solutions. We believe that every logistical operation should be streamlined, reliable, and efficient. Through our comprehensive range of services and relentless dedication to innovation, we are committed to turning this belief into a tangible reality, transforming the logistics landscape one delivery at a time.</p>
+            </div>
+            <div className="headingMission">
+              <h1 onMouseEnter={textEnter} onMouseLeave={textLeave}>Our Mission</h1>
+            </div>
+          </div>
+        </div>
+        <div className="buttonContact">
+          <Link to="/Contact"><button>Contact US &gt;</button></Link>
+        </div>
+      </section>
+    </>
+  )
+}

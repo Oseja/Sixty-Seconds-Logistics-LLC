@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: none;
+}
+.seperation{
+    height: 7px;
+    background-color: rgb(231, 231, 231);
+    margin: 8px auto;
+    position: relative;
+    z-index: 20;
+}
+.bannerSection {
+    background: url(https://www.tenfourmagazine.com/content/wp-content/gallery/nov2017cover/NovCvrStory03.jpg);
+    border-image: fill 0 linear-gradient(#0003, #000000a4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+}
+.BannerConent >:nth-child(1){
+    font-size: 4vh;
+    font-weight: bolder;
+    color: white;
+    padding: 0px 50px;
+}
+.BannerConent >:nth-child(2){
+    font-size: 12px;
+    text-wrap: wrap;
+    font-weight: 400px;
+    color: white;
+    padding: 0px 50px;
+}
+.BannerConent button{
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400px;
+    color: white;
+    border: none;
+    background-color: #5254ff;
+    width: 10rem;
+    height: 3rem;
+    margin: 0px 50px;
+    border-radius: 8px;
+}   
+.BannerConent button:hover{
+    background-color: black;
+    color: white;
+    transition: .5s all ease-in-out;
+    font-weight: 600px;
+}  
+
+.greetings{
+    display: flex;
+    max-width: 100vw;
+}
+.greetingHeading span, .MainSection span, .TruckMain span, .workHeaading span, .priceMainHeading span, .driveeMainHeading span{
+    color: #5254ff;
+}
+.greetingHeading >:nth-child(1){
+    font-size: 4vh;
+    text-wrap: wrap;
+    padding: 0px 50px;
+    padding-top: 60px;
+    width: 30vw;
+}
+.greetingPara{
+    font-size: 12px;
+    text-wrap: wrap;
+    padding: 80px 10px;
+    width: 70vw;
+}
+
+
+.MainSection{
+    max-width: 100vw;
+}
+.MainSection> :nth-child(1){
+text-align: center;
+padding-top: 50px;
+font-size: 4vh;
+}
+
+.MainContent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100vw;
+    padding-top: 50px;
+}
+.MainRoket, .MainPhone, .MainLock, .MainWallet{
+    width: calc(100%-80px);
+}
+.MainRoket >:nth-child(1){
+    color: #5254ff;
+    font-size: 50px;
+    margin-left: 4.2rem;
+}
+.MainRoket >:nth-child(2), .MainPhone >:nth-child(2), .MainLock >:nth-child(2), .MainWallet >:nth-child(2){
+    font-size: 15px;
+    padding: 10px 0px;
+    text-align: center;
+    text-wrap: wrap;
+}
+.MainRoket >:nth-child(3), .MainPhone >:nth-child(3),.MainLock >:nth-child(3) , .MainWallet >:nth-child(3){
+    font-size: 10px;
+    text-align: center;
+    text-wrap: wrap;
+}
+.MainPhone >:nth-child(1), .MainLock >:nth-child(1){
+    color: #5254ff;
+    font-size: 50px;
+    margin-left: 75px;
+}
+.MainWallet >:nth-child(1){
+    color: #5254ff;
+    font-size: 50px;
+    margin-left: 65px;
+}
+.TruckMain{
+    max-width: 100vw;
+    padding-top: 110px;
+}
+.TruckMain >:nth-child(1){
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 4vh;
+}
+.truckGalery{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 110px;
+    flex-wrap: wrap;
+    max-width: 100vw;
+}
+.PoweOnly, .flatBed, .Reefer, .dryVan, .hotShort, .boxTruck{
+    padding: 10px 140px;
+    max-width: 100vw;
+    
+}
+
+.PoweOnly img, .flatBed img, .Reefer img, .dryVan img, .boxTruck img, .hotShort img{
+    border-radius: 8px;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.PoweOnly :nth-child(2), .flatBed :nth-child(2), .Reefer :nth-child(2), .dryVan :nth-child(2),
+.boxTruck :nth-child(2), .hotShort :nth-child(2){
+    text-align: center;
+    padding-top: 20px;
+}
+.PoweOnly :nth-child(3), .flatBed :nth-child(3), .Reefer :nth-child(3), .dryVan :nth-child(3),
+.boxTruck :nth-child(3), .hotShort :nth-child(3){
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+    text-wrap: wrap;
+}
+
+
+.priceMain, .driveeMain{
+    max-width: 100vw;
+}
+.priceMainHeading, .driveeMainHeading{
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 4vh;
+    margin-top: 110px;
+}
+.priceMainPara, .driveMainPara{
+    text-align: center;
+    text-wrap: wrap;
+    font-size: 12px;
+    padding: 20px 10px;
+}
+.priceCards, .driveCards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+.priceCardone ,.priceCardtwo, .priceCardthree{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    width: 25rem;
+    height: 450px;
+    border-radius: 8px;
+    position: relative;
+    margin: 20px 20px;
+}
+span i{
+    color: #5254ff;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 20px 0px;
+    font-size: 5vh;
+}
+.priceCardone:hover ,.priceCardtwo:hover, .priceCardthree:hover{
+    scale: 1.05;
+    transition: .3s all linear;
+}
+.priceCardone h2, .priceCardtwo h2, .priceCardthree h2{
+    font-size: 2.5vh;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px 0px;
+    background-color: #5254ff;
+    color: white;
+}
+.priceCardone p, .priceCardtwo p, .priceCardthree p{
+    text-align: justify;
+    font-size: 12px;
+    text-wrap: wrap;
+    padding: 20px 20px;
+    border-bottom: 2px solid #5254ff;
+}
+.driveCardone, .driveCardtwo, .driveCardthree, .driveCardfour{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    width: 20rem;
+    height: 350px;
+    border-radius: 8px;
+    position: relative;
+    margin: 20px 20px;
+}
+.driveCardone:hover, .driveCardtwo:hover, .driveCardthree:hover, .driveCardfour:hover{
+    scale: 1.05;
+    transition: .3s all linear;
+}
+.driveCardone h1, .driveCardtwo h1, .driveCardthree h1, .driveCardfour h1{
+    font-size: 3vh;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.driveCardone h5, .driveCardtwo h5, .driveCardthree h5, .driveCardfour h5{
+    font-size: 2vh;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px 3px;
+    background-color: #5254ff;
+    color: white;
+}
+.driveCardone p, .driveCardtwo p, .driveCardthree p, .driveCardfour p{
+    text-align: center;
+    text-wrap: wrap;
+    padding: 30px 10px;
+    font-size: 12px;
+}
+.driveCardone a{
+    text-decoration: none;
+    color: #5254ff;
+}
+.cursor{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    /* transition: all linear 0.1s; */
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 10000;
+}
+#testimain{
+    max-width: 100vw;
+    background: url(https://i.pinimg.com/564x/75/05/e6/7505e630b199f8eacfc21acb3d5dfb47.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    border-image: fill 0 linear-gradient(#0003, #000000a4);
+    background-attachment: fixed;
+}
+  .testimonials{
+    width: 100%;
+    margin-top: 110px;
+    height: 60vh;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.247);
+    backdrop-filter: blur(2px);
+    
+  }
+  .testimonials h1{
+    font-size: 4vh;
+    text-align: center;
+    color: #5254ff;
+  }
+  .userOne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .userOne img{
+    border-radius: 50%;
+    object-fit: cover;
+   
+  }
+  .userOne h5{
+    font-size: 4vh;
+    text-align: center;
+    text-wrap: wrap;
+    padding: 20px 0px;
+  }
+  .userOne p{
+    font-size: 12px;
+    text-align: center;
+    text-wrap: wrap;
+    padding: 10px 0px;
+  }
+  .userOne span{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .userOne span i{
+    color: orange;
+    height: 20px;
+    padding: 10px 0px;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+      display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+  .autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+  
+  .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  }
+  
+  
+  
+  
+@media screen and (max-width: 850px) {
+    .bannerSection{
+        object-position: center;
+    }
+    .BannerConent >:nth-child(1){
+    font-size: 3vh;
+    padding: 0px 10px;
+    }
+    .BannerConent >:nth-child(2){
+    font-size: 1.2vh;
+    padding: 0px 10px;
+    }
+    .BannerConent Button{
+    font-size: 1.5vh;
+    margin: 0px 20px;
+    width: 12vh;
+    }
+    .greetings{
+        flex-direction: column;
+        max-width: 100vw;
+    }
+    .greetingHeading >:nth-child(1){
+        width: 100%;
+        text-align: center;
+    }
+    .greetingPara{
+        width: 100%;
+        text-align: justify;
+        padding: 20px 20px;
+    }
+    .MainContent{
+        flex-direction: column;
+    }
+    .MainPhone,.MainWallet,.MainLock{
+        padding: 30px 0px;
+    }
+    .truckGalery{
+        grid-gap: 20px;
+    }
+    .PoweOnly, .flatBed, .Reefer, .dryVan, .hotShort, .boxTruck{
+        padding: 10px 0px;
+    }
+    
+    .priceCardone button, .priceCardtwo button, .priceCardthree button{
+        margin-top: 30px;
+    }
+    .userOne p{
+        font-size: 1vh;
+        text-wrap: wrap;
+        padding: 0px 20px;
+    }
+
+    #testimain{
+        background-attachment: scroll ;
+    }
+}
