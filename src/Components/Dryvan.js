@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../All-CSS/Trucks.css'
 
-export default function PowerOnly(props) {
+export default function Dryvan(props) {
     const [mousePosition, setMousePosition] = useState({
         x: 0,
         y: 0
@@ -47,21 +47,21 @@ export default function PowerOnly(props) {
       </div>
     <section>
     <div className="dryBanner">
-          <h1>Sixty Seconds Logistics LLC | Power Only  </h1>
-          <span><h5><Link to="/">Home</Link>&gt; Power Only</h5></span>
+          <h1>Sixty Seconds Logistics LLC | Dry Van </h1>
+          <span><h5><Link to="/">Home</Link>&gt; Dry Van</h5></span>
         </div>
     </section>
     <section>
         <div className="Maindry">
             <div className="dryContent">
-            <h1>Truck types – <span>Power Only</span></h1>
-            <p>Power-only trucks are vehicles specifically designed to haul trailers without carrying any cargo themselves. They provide the necessary towing capacity to transport trailers loaded with freight, but unlike traditional trucks, they do not carry their own cargo. This setup allows for efficient transportation of goods while maximizing flexibility in trailer usage and minimizing operational costs. Power-only trucks are commonly used in logistics and transportation to move trailers between locations or to assist with overflow freight.</p>
+            <h1>Truck types – <span>Dry Van</span></h1>
+            <p>Dry vans are trucks that feature fully enclosed semi-trailers, providing complete protection for shipments against external elements like rain or snow. They are specifically designed to transport palletized, boxed, or loose freight without temperature control, unlike reefers. Dry vans accommodate a diverse range of loads, provided they fit within the dimensions of the trailer.</p>
             <div className="buttonContact">
           <Link to="/Contact"><button>Contact US &gt;</button></Link>
         </div>
         </div>
         <div className="dryImage">
-          <img src="https://www.veritread.com/wp-content/uploads/Power-Only-Trucking.png" alt="Poweronly" />
+          <img src="https://www.freightwaves.com/wp-content/uploads/2021/09/0_truck_080209_48_3806447601_o.jpg" alt="Dryvan" />
         </div>
            
         </div>

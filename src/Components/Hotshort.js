@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../All-CSS/Trucks.css'
 
-export default function PowerOnly(props) {
+export default function Hotshort(props) {
     const [mousePosition, setMousePosition] = useState({
         x: 0,
         y: 0
@@ -47,21 +47,21 @@ export default function PowerOnly(props) {
       </div>
     <section>
     <div className="dryBanner">
-          <h1>Sixty Seconds Logistics LLC | Power Only  </h1>
-          <span><h5><Link to="/">Home</Link>&gt; Power Only</h5></span>
+          <h1>Sixty Seconds Logistics LLC | Hot Short </h1>
+          <span><h5><Link to="/">Home</Link>&gt; Hot Short </h5></span>
         </div>
     </section>
     <section>
         <div className="Maindry">
             <div className="dryContent">
-            <h1>Truck types – <span>Power Only</span></h1>
-            <p>Power-only trucks are vehicles specifically designed to haul trailers without carrying any cargo themselves. They provide the necessary towing capacity to transport trailers loaded with freight, but unlike traditional trucks, they do not carry their own cargo. This setup allows for efficient transportation of goods while maximizing flexibility in trailer usage and minimizing operational costs. Power-only trucks are commonly used in logistics and transportation to move trailers between locations or to assist with overflow freight.</p>
+            <h1>Truck types – <span>Hot Short</span></h1>
+            <p>Hot shot trucks are specialized vehicles primarily utilized for transporting smaller, time-sensitive loads with expedited delivery requirements. These trucks provide a nimble and efficient solution for hauling urgent shipments that may not require the full capacity of a standard freight truck. Unlike traditional freight trucks, hot shot trucks are typically smaller in size and can maneuver more easily, making them ideal for navigating tight spaces or reaching remote locations. They play a vital role in industries such as construction, oil and gas, and agriculture, where quick delivery of equipment, parts, or materials is essential to maintaining operations.</p>
             <div className="buttonContact">
           <Link to="/Contact"><button>Contact US &gt;</button></Link>
         </div>
         </div>
         <div className="dryImage">
-          <img src="https://www.veritread.com/wp-content/uploads/Power-Only-Trucking.png" alt="Poweronly" />
+          <img src="https://www.veritread.com/wp-content/uploads/hot-shot-with-dozer.jpg" alt="Hotshort" />
         </div>
            
         </div>

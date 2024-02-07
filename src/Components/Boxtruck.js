@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../All-CSS/Trucks.css'
 
-export default function PowerOnly(props) {
+export default function Boxtruck(props) {
     const [mousePosition, setMousePosition] = useState({
         x: 0,
         y: 0
@@ -47,21 +47,21 @@ export default function PowerOnly(props) {
       </div>
     <section>
     <div className="dryBanner">
-          <h1>Sixty Seconds Logistics LLC | Power Only  </h1>
-          <span><h5><Link to="/">Home</Link>&gt; Power Only</h5></span>
+          <h1>Sixty Seconds Logistics LLC | Box Truck  </h1>
+          <span><h5><Link to="/">Home</Link>&gt; Box Truck </h5></span>
         </div>
     </section>
     <section>
         <div className="Maindry">
             <div className="dryContent">
-            <h1>Truck types – <span>Power Only</span></h1>
-            <p>Power-only trucks are vehicles specifically designed to haul trailers without carrying any cargo themselves. They provide the necessary towing capacity to transport trailers loaded with freight, but unlike traditional trucks, they do not carry their own cargo. This setup allows for efficient transportation of goods while maximizing flexibility in trailer usage and minimizing operational costs. Power-only trucks are commonly used in logistics and transportation to move trailers between locations or to assist with overflow freight.</p>
+            <h1>Truck types – <span>Box Truck</span></h1>
+            <p>Box trucks are specialized vehicles designed with an enclosed cargo area, resembling a large, square-shaped box. They are commonly used for transporting a variety of goods, equipment, or materials over short to medium distances. Box trucks offer versatility in cargo handling, providing protection from weather elements and theft. With their accessible rear cargo doors and spacious interior, they facilitate easy loading and unloading of freight. Box trucks are essential in urban environments, where larger trucks may have difficulty maneuvering, and they serve various industries including retail, delivery services, moving companies, and logistics.</p>
             <div className="buttonContact">
           <Link to="/Contact"><button>Contact US &gt;</button></Link>
         </div>
         </div>
         <div className="dryImage">
-          <img src="https://www.veritread.com/wp-content/uploads/Power-Only-Trucking.png" alt="Poweronly" />
+          <img src="https://img.freepik.com/free-photo/truck-vehicle-with-trailers-background_342744-1297.jpg" alt="Boxtruck" />
         </div>
            
         </div>

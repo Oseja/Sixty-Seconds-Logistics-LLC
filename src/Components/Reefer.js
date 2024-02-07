@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../All-CSS/Trucks.css'
 
-export default function PowerOnly(props) {
+export default function Reefer(props) {
     const [mousePosition, setMousePosition] = useState({
         x: 0,
         y: 0
@@ -47,21 +47,21 @@ export default function PowerOnly(props) {
       </div>
     <section>
     <div className="dryBanner">
-          <h1>Sixty Seconds Logistics LLC | Power Only  </h1>
-          <span><h5><Link to="/">Home</Link>&gt; Power Only</h5></span>
+          <h1>Sixty Seconds Logistics LLC | Reefer </h1>
+          <span><h5><Link to="/">Home</Link>&gt; Reefer</h5></span>
         </div>
     </section>
     <section>
         <div className="Maindry">
             <div className="dryContent">
-            <h1>Truck types – <span>Power Only</span></h1>
-            <p>Power-only trucks are vehicles specifically designed to haul trailers without carrying any cargo themselves. They provide the necessary towing capacity to transport trailers loaded with freight, but unlike traditional trucks, they do not carry their own cargo. This setup allows for efficient transportation of goods while maximizing flexibility in trailer usage and minimizing operational costs. Power-only trucks are commonly used in logistics and transportation to move trailers between locations or to assist with overflow freight.</p>
+            <h1>Truck types – <span>Reefer</span></h1>
+            <p>Reefer trucks are specialized vehicles equipped with refrigeration units, designed to maintain specific temperature conditions inside the trailer. This ensures the safe transportation of temperature-sensitive cargo such as perishable goods, pharmaceuticals, or certain chemicals. Reefer trucks offer precise temperature control, allowing for the transportation of goods that require refrigeration or freezing temperatures. They play a crucial role in the cold chain logistics industry, ensuring that perishable items reach their destination in optimal condition.</p>
             <div className="buttonContact">
           <Link to="/Contact"><button>Contact US &gt;</button></Link>
         </div>
         </div>
         <div className="dryImage">
-          <img src="https://www.veritread.com/wp-content/uploads/Power-Only-Trucking.png" alt="Poweronly" />
+          <img src="https://filesblog.bizvibe.com/wp-content/uploads/2020/06/largest-trucking-companies.jpg" alt="Reefer" />
         </div>
            
         </div>

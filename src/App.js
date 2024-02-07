@@ -8,6 +8,11 @@ import Alert from './Components/Alert'
 import Footer from './Components/Footer'
 import PowerOnly from './Components/PowerOnly'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Dryvan from './Components/Dryvan'
+import Reefer from './Components/Reefer'
+import Flatbed from './Components/Flatbed'
+import Boxtruck from './Components/Boxtruck'
+import Hotshort from './Components/Hotshort'
 export default function App() {
 
   const [alert, setAlert] = useState(null);
@@ -47,6 +52,11 @@ export default function App() {
         <Route path="/Services" element={<Services mode={mode} toggleMode={toggleMode}/>} />
         <Route path="/Contact" element={<Contact mode={mode} toggleMode={toggleMode} />} />
         <Route path="/Poweronly" element={<PowerOnly mode={mode} toggleMode={toggleMode} />} />
+        <Route path="/Dryvan" element={<Dryvan mode={mode} toggleMode={toggleMode} />} />
+        <Route path="/Reefer" element={<Reefer mode={mode} toggleMode={toggleMode} />} />
+        <Route path="/Flatbed" element={<Flatbed mode={mode} toggleMode={toggleMode} />} />
+        <Route path="/Boxtruck" element={<Boxtruck mode={mode} toggleMode={toggleMode} />} />
+        <Route path="/Hotshort" element={<Hotshort mode={mode} toggleMode={toggleMode} />} />
         </Routes>
         <Footer mode={mode} toggleMode={toggleMode}/>
       </BrowserRouter>

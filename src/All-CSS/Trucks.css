@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
     cursor: none;
 }
-.powerBanner{
+.dryBanner{
     max-width: 100vw;
     height: 80vh;
     background: url(https://www.tenfourmagazine.com/content/wp-content/gallery/nov2017cover/NovCvrStory03.jpg);
@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: space-between;
 }
-.powerBanner h1{
+.dryBanner h1{
     font-size: 3vh;
     text-align: center;
     color: white;
@@ -27,31 +27,44 @@
     padding: 0px 40px;
     font-weight: bold;
 }
-.powerBanner h5 a, .powerBanner h5 {
+.dryBanner h5 a, .dryBanner h5 {
     color: white;
     text-decoration: none;
     text-wrap: wrap;
     font-size: 14px;
 }
-.powerBanner span{
+.dryBanner span{
     margin: 0px 60px;
 }
 
-.Mainpower{
+.Maindry{
     max-width: 100vw;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    justify-content: center;
 }
-.powerContent h1{
+.dryContent{
+    width: 40vw;
+}
+.dryContent h1{
     font-size: 4vh;
     text-wrap: wrap;
     text-align: left;
 }
-.powerContent span{
+.dryContent span{
     color: #5254ff;
 }
-.powerContent p{
+.dryContent p{
     font-size: 14px;
     text-wrap: wrap;
     text-align: justify;
+    padding: 10px 40px 0px 0px;
+}
+.buttonContact{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 .buttonContact button{
     font-size: 12px;
@@ -71,16 +84,33 @@
     transition: .5s all ease-in-out;
     font-weight: 600px;
 }  
+.dryImage img{
+    width: 50vw;
+}
 
 @media screen and (max-width:850px) {
-    .powerBanner h1{
+    .dryBanner h1{
         font-size: 2vh;
         padding: 0px 20px;
     }
-    .powerBanner h5 a, .powerBanner h5{
+    .dryBanner h5 a, .dryBanner h5{
         font-size: 12px;
     }
-    .powerBanner span{
+    .dryBanner span{
         margin: 0px 20px;
+    }
+    .Maindry{
+        flex-direction: column-reverse;
+        padding: 0px 10px;
+    }
+    .dryContent{
+        width: 100%;
+        padding: 20px 0px;
+    }
+    .dryContent p,h1,img{
+        padding: 10px 10px;
+    }
+    .dryImage img{
+        width: 100%;
     }
 }

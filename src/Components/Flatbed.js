@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../All-CSS/Trucks.css'
 
-export default function PowerOnly(props) {
+export default function Flatbed(props) {
     const [mousePosition, setMousePosition] = useState({
         x: 0,
         y: 0
@@ -47,21 +47,21 @@ export default function PowerOnly(props) {
       </div>
     <section>
     <div className="dryBanner">
-          <h1>Sixty Seconds Logistics LLC | Power Only  </h1>
-          <span><h5><Link to="/">Home</Link>&gt; Power Only</h5></span>
+          <h1>Sixty Seconds Logistics LLC | Flat Bed  </h1>
+          <span><h5><Link to="/">Home</Link>&gt; Flat Bed</h5></span>
         </div>
     </section>
     <section>
         <div className="Maindry">
             <div className="dryContent">
-            <h1>Truck types – <span>Power Only</span></h1>
-            <p>Power-only trucks are vehicles specifically designed to haul trailers without carrying any cargo themselves. They provide the necessary towing capacity to transport trailers loaded with freight, but unlike traditional trucks, they do not carry their own cargo. This setup allows for efficient transportation of goods while maximizing flexibility in trailer usage and minimizing operational costs. Power-only trucks are commonly used in logistics and transportation to move trailers between locations or to assist with overflow freight.</p>
+            <h1>Truck types – <span>Flat Bed</span></h1>
+            <p>Flatbed trucks are specialized vehicles equipped with an open, flat cargo area, devoid of sides or a roof. They are purpose-built to transport oversized, heavy, or oddly-shaped cargo that cannot be accommodated by enclosed trucks. Flatbed trucks offer versatility in loading and securing various types of freight, including construction materials, machinery, equipment, and large structures. Their open design allows for easy loading and unloading using cranes, forklifts, or other heavy equipment. Flatbed trucks play a crucial role in industries such as construction, manufacturing, and transportation of oversized goods, providing a flexible and efficient solution for moving challenging loads.</p>
             <div className="buttonContact">
           <Link to="/Contact"><button>Contact US &gt;</button></Link>
         </div>
         </div>
         <div className="dryImage">
-          <img src="https://www.veritread.com/wp-content/uploads/Power-Only-Trucking.png" alt="Poweronly" />
+          <img src="https://www.transportationservices.ca/wp-content/uploads/2018/06/flatbed-trucking.jpg" alt="Flatbed" />
         </div>
            
         </div>
