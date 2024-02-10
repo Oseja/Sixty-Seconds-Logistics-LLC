@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import Poweronly from '../assets/ps-power.webp'
 import '../All-CSS/Trucks.css'
+import { Helmet } from 'react-helmet';
 
 export default function PowerOnly(props) {
     const [mousePosition, setMousePosition] = useState({
@@ -40,6 +42,10 @@ export default function PowerOnly(props) {
       const textLeave = () => setcursorVariants("default");
   return (
     <>
+    <Helmet>
+    <title>Sixty Seconds Logistics LLC - Power Only</title>
+        <meta name="description" content="Truck Logistic Company" />
+    </Helmet>
      <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"
           variants={variants}
@@ -52,7 +58,7 @@ export default function PowerOnly(props) {
         </div>
     </section>
     <section>
-        <div className="Maindry">
+        <div className="Maindry" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="dryContent">
             <h1>Truck types – <span>Power Only</span></h1>
             <p>Power-only trucks are vehicles specifically designed to haul trailers without carrying any cargo themselves. They provide the necessary towing capacity to transport trailers loaded with freight, but unlike traditional trucks, they do not carry their own cargo. This setup allows for efficient transportation of goods while maximizing flexibility in trailer usage and minimizing operational costs. Power-only trucks are commonly used in logistics and transportation to move trailers between locations or to assist with overflow freight.</p>
@@ -61,7 +67,7 @@ export default function PowerOnly(props) {
         </div>
         </div>
         <div className="dryImage">
-          <img src="https://www.veritread.com/wp-content/uploads/Power-Only-Trucking.png" alt="Poweronly" />
+          <img src={Poweronly} alt="Poweronly" loading='lazy' />
         </div>
            
         </div>

@@ -84,7 +84,7 @@ footer{
     padding: 0px;
     list-style: none;
     text-align: left;
-    font-size: 2vh;
+    font-size: 1.5vh;
     margin: 40px 0px;
 }
 .footer-socials li{
@@ -121,7 +121,7 @@ footer{
     margin: 0px;
 }
 .logoContent p{
-    font-size: 1.5vh;
+    font-size: 10px;
     text-wrap: wrap;
     text-align: justify;
     padding: 20px 10px 0px 10px;

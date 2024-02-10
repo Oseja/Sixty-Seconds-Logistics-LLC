@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { motion } from 'framer-motion';
 import '../All-CSS/Services.css';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 export default function Services(props) {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -39,6 +40,10 @@ export default function Services(props) {
   const textLeave = () => setcursorVariants("default");
   return (
   <>
+  <Helmet>
+    <title>Sixty Seconds Logistics LLC - Services</title>
+        <meta name="description" content="Truck Logistic Company" />
+    </Helmet>
     <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
       <motion.div className="cursor"
             variants={variants}

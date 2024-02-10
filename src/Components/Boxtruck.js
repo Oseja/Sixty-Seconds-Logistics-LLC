@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import boxtruck from '../assets/box-truck.webp'
 import '../All-CSS/Trucks.css'
+import { Helmet } from 'react-helmet';
 
 export default function Boxtruck(props) {
     const [mousePosition, setMousePosition] = useState({
@@ -40,6 +42,10 @@ export default function Boxtruck(props) {
       const textLeave = () => setcursorVariants("default");
   return (
     <>
+    <Helmet>
+    <title>Sixty Seconds Logistics LLC - BoxTruck</title>
+        <meta name="description" content="Truck Logistic Company" />
+    </Helmet>
      <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"
           variants={variants}
@@ -52,7 +58,7 @@ export default function Boxtruck(props) {
         </div>
     </section>
     <section>
-        <div className="Maindry">
+        <div className="Maindry" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="dryContent">
             <h1>Truck types – <span>Box Truck</span></h1>
             <p>Box trucks are specialized vehicles designed with an enclosed cargo area, resembling a large, square-shaped box. They are commonly used for transporting a variety of goods, equipment, or materials over short to medium distances. Box trucks offer versatility in cargo handling, providing protection from weather elements and theft. With their accessible rear cargo doors and spacious interior, they facilitate easy loading and unloading of freight. Box trucks are essential in urban environments, where larger trucks may have difficulty maneuvering, and they serve various industries including retail, delivery services, moving companies, and logistics.</p>
@@ -61,7 +67,7 @@ export default function Boxtruck(props) {
         </div>
         </div>
         <div className="dryImage">
-          <img src="https://img.freepik.com/free-photo/truck-vehicle-with-trailers-background_342744-1297.jpg" alt="Boxtruck" />
+          <img src={boxtruck} alt="Boxtruck" loading='lazy'/>
         </div>
            
         </div>

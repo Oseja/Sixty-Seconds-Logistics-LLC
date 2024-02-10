@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect } from 'react'
 import Home from './Components/Home'
 import About from './Components/About'
 import Services from './Components/Services'
@@ -13,6 +13,8 @@ import Reefer from './Components/Reefer'
 import Flatbed from './Components/Flatbed'
 import Boxtruck from './Components/Boxtruck'
 import Hotshort from './Components/Hotshort'
+import CircleLoader from "react-spinners/CircleLoader";
+import './App.css'
 export default function App() {
 
   const [alert, setAlert] = useState(null);
@@ -41,8 +43,28 @@ export default function App() {
       showAlert('The Dark Mode Has Been Enabled', 'success');
     }
   };
+  const [loading , setLoading] = useState(false);
+  useEffect(() =>{
+    setLoading(true)
+    setTimeout(() =>{
+      setLoading(false)
+    }, 4000)
+  }, [])
   return (
     <>
+    {
+      loading ?
+      <div className="App">
+      <CircleLoader
+      color={'#5254ff'}
+      loading={loading}
+      size={150}
+      className='App'
+      // aria-label="Loading Spinner"
+      // data-testid="loader"
+      />
+      </div>
+    :
      <BrowserRouter>
      <Navbar mode={mode} toggleMode={toggleMode}/>
      <Alert alert={alert}/>
@@ -60,6 +82,8 @@ export default function App() {
         </Routes>
         <Footer mode={mode} toggleMode={toggleMode}/>
       </BrowserRouter>
+    }
+
     </>
   )
 }

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import  hotshorttt1 from '../assets/hotshorttt1.webp'
 import '../All-CSS/Trucks.css'
+import { Helmet } from 'react-helmet';
 
 export default function Hotshort(props) {
     const [mousePosition, setMousePosition] = useState({
@@ -40,6 +42,10 @@ export default function Hotshort(props) {
       const textLeave = () => setcursorVariants("default");
   return (
     <>
+    <Helmet>
+    <title>Sixty Seconds Logistics LLC - HotShort</title>
+        <meta name="description" content="Truck Logistic Company" />
+    </Helmet>
      <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"
           variants={variants}
@@ -52,7 +58,7 @@ export default function Hotshort(props) {
         </div>
     </section>
     <section>
-        <div className="Maindry">
+        <div className="Maindry" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="dryContent">
             <h1>Truck types – <span>Hot Short</span></h1>
             <p>Hot shot trucks are specialized vehicles primarily utilized for transporting smaller, time-sensitive loads with expedited delivery requirements. These trucks provide a nimble and efficient solution for hauling urgent shipments that may not require the full capacity of a standard freight truck. Unlike traditional freight trucks, hot shot trucks are typically smaller in size and can maneuver more easily, making them ideal for navigating tight spaces or reaching remote locations. They play a vital role in industries such as construction, oil and gas, and agriculture, where quick delivery of equipment, parts, or materials is essential to maintaining operations.</p>
@@ -61,7 +67,7 @@ export default function Hotshort(props) {
         </div>
         </div>
         <div className="dryImage">
-          <img src="https://www.veritread.com/wp-content/uploads/hot-shot-with-dozer.jpg" alt="Hotshort" />
+          <img src={hotshorttt1} alt="Hotshort" loading='lazy'/>
         </div>
            
         </div>

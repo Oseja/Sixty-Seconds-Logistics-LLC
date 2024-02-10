@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import dryvan from '../assets/Dryvann.webp'
 import '../All-CSS/Trucks.css'
-
+import { Helmet } from 'react-helmet';
 export default function Dryvan(props) {
     const [mousePosition, setMousePosition] = useState({
         x: 0,
@@ -40,6 +41,10 @@ export default function Dryvan(props) {
       const textLeave = () => setcursorVariants("default");
   return (
     <>
+    <Helmet>
+    <title>Sixty Seconds Logistics LLC - Dryvan</title>
+        <meta name="description" content="Truck Logistic Company" />
+    </Helmet>
      <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"
           variants={variants}
@@ -52,7 +57,7 @@ export default function Dryvan(props) {
         </div>
     </section>
     <section>
-        <div className="Maindry">
+        <div className="Maindry" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="dryContent">
             <h1>Truck types – <span>Dry Van</span></h1>
             <p>Dry vans are trucks that feature fully enclosed semi-trailers, providing complete protection for shipments against external elements like rain or snow. They are specifically designed to transport palletized, boxed, or loose freight without temperature control, unlike reefers. Dry vans accommodate a diverse range of loads, provided they fit within the dimensions of the trailer.</p>
@@ -61,7 +66,7 @@ export default function Dryvan(props) {
         </div>
         </div>
         <div className="dryImage">
-          <img src="https://www.freightwaves.com/wp-content/uploads/2021/09/0_truck_080209_48_3806447601_o.jpg" alt="Dryvan" />
+          <img src={dryvan} alt="Dryvan" loading='lazy'/>
         </div>
            
         </div>

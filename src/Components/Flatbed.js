@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import flatbed from '../assets/Flatbed.webp'
 import '../All-CSS/Trucks.css'
+import { Helmet } from 'react-helmet';
 
 export default function Flatbed(props) {
     const [mousePosition, setMousePosition] = useState({
@@ -40,6 +42,10 @@ export default function Flatbed(props) {
       const textLeave = () => setcursorVariants("default");
   return (
     <>
+    <Helmet>
+    <title>Sixty Seconds Logistics LLC - FlatBed</title>
+        <meta name="description" content="Truck Logistic Company" />
+    </Helmet>
      <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"
           variants={variants}
@@ -52,7 +58,7 @@ export default function Flatbed(props) {
         </div>
     </section>
     <section>
-        <div className="Maindry">
+        <div className="Maindry" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="dryContent">
             <h1>Truck types – <span>Flat Bed</span></h1>
             <p>Flatbed trucks are specialized vehicles equipped with an open, flat cargo area, devoid of sides or a roof. They are purpose-built to transport oversized, heavy, or oddly-shaped cargo that cannot be accommodated by enclosed trucks. Flatbed trucks offer versatility in loading and securing various types of freight, including construction materials, machinery, equipment, and large structures. Their open design allows for easy loading and unloading using cranes, forklifts, or other heavy equipment. Flatbed trucks play a crucial role in industries such as construction, manufacturing, and transportation of oversized goods, providing a flexible and efficient solution for moving challenging loads.</p>
@@ -61,7 +67,7 @@ export default function Flatbed(props) {
         </div>
         </div>
         <div className="dryImage">
-          <img src="https://www.transportationservices.ca/wp-content/uploads/2018/06/flatbed-trucking.jpg" alt="Flatbed" />
+          <img src={flatbed} alt="Flatbed" loading='lazy'/>
         </div>
            
         </div>

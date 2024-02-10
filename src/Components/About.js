@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../All-CSS/About.css'
+import { Helmet } from 'react-helmet';
 export default function About(props) {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -39,6 +40,10 @@ export default function About(props) {
   const textLeave = () => setcursorVariants("default");
   return (
     <>
+    <Helmet>
+    <title>Sixty Seconds Logistics LLC - About</title>
+        <meta name="description" content="Truck Logistic Company" />
+    </Helmet>
       <motion.div className="cursor"
         variants={variants}
         animate={cursorVariants} />
@@ -67,8 +72,8 @@ export default function About(props) {
             </div>
           </div>
         </div>
-        <div className="buttonContact">
-          <Link to="/Contact"><button>Contact US &gt;</button></Link>
+        <div className="Contact-Button">
+          <Link to="/Contact"><button >Contact US &gt;</button></Link>
         </div>
       </section>
     </>

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import reefer from '../assets/Reeferr.webp'
 import '../All-CSS/Trucks.css'
+import { Helmet } from 'react-helmet';
 
 export default function Reefer(props) {
     const [mousePosition, setMousePosition] = useState({
@@ -40,6 +42,10 @@ export default function Reefer(props) {
       const textLeave = () => setcursorVariants("default");
   return (
     <>
+    <Helmet>
+    <title>Sixty Seconds Logistics LLC - Reefer</title>
+        <meta name="description" content="Truck Logistic Company" />
+    </Helmet>
      <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"
           variants={variants}
@@ -52,7 +58,7 @@ export default function Reefer(props) {
         </div>
     </section>
     <section>
-        <div className="Maindry">
+        <div className="Maindry" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="dryContent">
             <h1>Truck types – <span>Reefer</span></h1>
             <p>Reefer trucks are specialized vehicles equipped with refrigeration units, designed to maintain specific temperature conditions inside the trailer. This ensures the safe transportation of temperature-sensitive cargo such as perishable goods, pharmaceuticals, or certain chemicals. Reefer trucks offer precise temperature control, allowing for the transportation of goods that require refrigeration or freezing temperatures. They play a crucial role in the cold chain logistics industry, ensuring that perishable items reach their destination in optimal condition.</p>
@@ -61,7 +67,7 @@ export default function Reefer(props) {
         </div>
         </div>
         <div className="dryImage">
-          <img src="https://filesblog.bizvibe.com/wp-content/uploads/2020/06/largest-trucking-companies.jpg" alt="Reefer" />
+          <img src={reefer} alt="Reefer" loading='lazy' />
         </div>
            
         </div>

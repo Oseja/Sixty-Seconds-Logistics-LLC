@@ -9,7 +9,7 @@
 .aboutBanner{
     max-width: 100vw;
     height: 80vh;
-    background: url(https://www.tenfourmagazine.com/content/wp-content/gallery/nov2017cover/NovCvrStory03.jpg);
+    background: url(../assets/image.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -66,10 +66,10 @@
     padding: 0px 50px;
 }
 
-.buttonContact button{
-    position: relative;
+.Contact-Button button{
+    /* position: relative;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%); */
     font-size: 12px;
     text-align: center;
     font-weight: 400px;
@@ -78,10 +78,10 @@
     background-color: #5254ff;
     width: 10rem;
     height: 3rem;
-    margin: 40px 0px 0px 0px;
+    margin: 40px 0px 0px 40px;
     border-radius: 8px;
 }   
-.buttonContact button:hover{
+.Contact-Button button:hover{
     background-color: black;
     color: white;
     transition: .5s all ease-in-out;

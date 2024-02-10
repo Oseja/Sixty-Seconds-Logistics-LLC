@@ -7,6 +7,7 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 import 'react-phone-input-2/lib/style.css'
 import '../All-CSS/Contact.css';
+import { Helmet } from 'react-helmet';
 export default function Contact(props) {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -96,6 +97,10 @@ export default function Contact(props) {
     }
   return (
     <>
+    <Helmet>
+    <title>Sixty Seconds Logistics LLC - Contact</title>
+        <meta name="description" content="Truck Logistic Company" />
+    </Helmet>
       <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"
           variants={variants}
@@ -212,7 +217,7 @@ export default function Contact(props) {
             </form>
           </div>
           <div className="formImage">
-            <img src={FormImg} alt="iamge form" onMouseEnter={textEnter} onMouseLeave={textLeave}/>
+            <img src={FormImg} alt="iamge form" onMouseEnter={textEnter} onMouseLeave={textLeave} loading='lazy'/>
           </div>
         </div>
       </section>

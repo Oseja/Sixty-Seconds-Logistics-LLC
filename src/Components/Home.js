@@ -1,21 +1,20 @@
 import React, { useEffect, useState, useRef} from 'react'
 import { motion } from 'framer-motion';
 import '../All-CSS/Home.css'
+import  Dryvan from '../assets/Dryvan.webp'
+import  Poweronly from '../assets/Poweronly.webp'
+import  Reefer from '../assets/Reefer.webp'
+import  Flatbed from '../assets/Flatbed.webp'
+import  Boxtruck2 from '../assets/Boxtruck2.jpg'
+import  hotshorttt1 from '../assets/hotshorttt1.webp'
 import { Link } from 'react-router-dom';
-
-
-
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-flip';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-
-
-// import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Helmet } from 'react-helmet';
 
 export default function Home(props) {
   const [mousePosition, setMousePosition] = useState({
@@ -63,12 +62,16 @@ export default function Home(props) {
   };
   return (
     <>
+    <Helmet>
+    <title>Sixty Seconds Logistics LLC - Home</title>
+        <meta name="description" content="Truck Logistic Company" />
+    </Helmet>
       <section>
         <div className="bannerSection">
           <div className="BannerConent" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <h1>Start Your Work With Us</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolorem quasi distinctio, doloribus dicta illo sapiente harum dolor odit adipisci.</p>
-            <Link to="#"><button>Get Started &gt;</button></Link>
+            <p>We are a professional truck dispatch company that provides quality services for owner-operators and small trucking companies.</p>
+            <Link to="/Services"><button>Get Started &gt;</button></Link>
           </div>
         </div>
       </section>
@@ -83,45 +86,95 @@ export default function Home(props) {
         </div>
       </section>
       <div class="seperation"></div>
-      <section id='truckSection'>
+      <section id='truckSection' >
         <div className="TruckMain" onMouseEnter={textEnter} onMouseLeave={textLeave}>
           <h1>Truck Dispatch Service Company for Owner Operators and <span>Trucking Companies:</span></h1>
         </div>
-        <div className="truckGalery">
-         <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <img src="https://glitruckdispatchservices.com/wp-content/uploads/2023/07/Dry-Van-Truck-Dispatch.jpg" alt="Dry Van" />
+         <Swiper
+         style={{border:props.mode === 'light' ? '1px solid white' : '1px solid white'}}
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        onAutoplayTimeLeft={onAutoplayTimeLeft}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+        <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <img src={Dryvan} alt="Dry Van" loading='lazy'/>
+            <div className="dryContent">
             <h6>Dry Van</h6>
-            <p>"Dry van truck: an enclosed commercial <br /> vehicle for transporting general cargo, <br /> protecting it from weather and theft."</p>
+            <p className='dryContentPara'>"Dry van truck: an enclosed commercia vehicle for transporting general cargo, protecting it from weather and theft."</p>
+            <Link to="/Dryvan"><button>Read More &gt;</button></Link>
+            </div>
           </div>
-           <div className="Reefer" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <img src="https://glitruckdispatchservices.com/wp-content/uploads/2023/07/Reefer-Truck-Dispatch.png" alt="Reefer" />
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <img src={Reefer} alt="Reefer" loading='lazy'/>
+            <div className="dryContent">
             <h6>Reefer</h6>
-            <p>"Reefer truck: a refrigerated commercial <br /> vehicle for transporting <br /> temperature-sensitive cargo."</p>
-          </div> <div className="flatBed" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <img src="https://glitruckdispatchservices.com/wp-content/uploads/2023/07/Flatbed-Truck-Dispatch.jpg" alt="FlatBed" />
-            <h6>FlatBed</h6>
-            <p>"Flatbed truck: open-bed commercial <br /> vehicle for transporting large <br /> or unconventional loads."</p>
+            <p className='dryContentPara'>"Reefer truck: a refrigerated commercial vehicle for transporting temperature-sensitive cargo"</p>
+            <Link to="/Reefer"><button>Read More &gt;</button></Link>
+            </div>
           </div>
-          <div className="PoweOnly" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <img src="https://glitruckdispatchservices.com/wp-content/uploads/2023/07/Power-Only-Truck-Dispatch.jpg" alt="Power Only" />
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <img src={Flatbed} alt="Flatbed" loading='lazy'/>
+            <div className="dryContent">
+            <h6>Flatbed</h6>
+            <p className='dryContentPara'>"Flatbed truck: open-bed commercial vehicle for transporting large or unconventional loads."</p>
+            <Link to="/Flatbed"><button>Read More &gt;</button></Link>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <img src={Poweronly} alt="Power Only" loading='lazy'/>
+            <div className="dryContent">
             <h6>Power Only</h6>
-            <p>"Power Only truck: a trucking service <br /> providing only the tractor to haul <br /> trailers owned by another company."</p>
+            <p className='dryContentPara'>"Power Only truck: a trucking service providing only the tractor to haul trailers owned by another company."</p>
+            <Link to="/Poweronly"><button>Read More &gt;</button></Link>
+            </div>
           </div>
-          
-         
-          
-          <div className="boxTruck" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <img src="https://i.pinimg.com/564x/fe/cb/8d/fecb8d58cc54bb764ec6d5ad662fdbf5.jpg" alt="Box Truck" />
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <img src={Boxtruck2} alt="Box Truck" loading='lazy'/>
+            <div className="dryContent">
             <h6>Box Truck</h6>
-            <p>"Box truck: a commercial vehicle <br /> with an enclosed cargo space, suitable <br /> for transporting various goods securely."</p>
+            <p className='dryContentPara'>"Box truck: a commercial vehicle with an enclosed cargo space, suitable for transporting various goods securely."</p>
+            <Link to="/Boxtruck"><button>Read More &gt;</button></Link>
+            </div>
           </div>
-          <div className="hotShort" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <img src="https://easydispatch247.com/wp-content/uploads/2022/06/hotshot-dispatch-company.jpg" alt="Hot Short" />
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <img src={hotshorttt1} alt="Hot Short" loading='lazy'/>
+            <div className="dryContent">
             <h6>Hot Short</h6>
-            <p>"Hot shot truck: a smaller, agile <br /> commercial vehicle offering expedited <br /> shipping for urgent or smaller loads."</p>
+            <p className='dryContentPara'>"Hot shot truck: a smaller, agile commercial vehicle offering expedited shipping for urgent or smaller loads."</p>
+            <Link to="/Hotshort"><button>Read More &gt;</button></Link>
+            </div>
           </div>
+        </SwiperSlide>
+        <div className="autoplay-progress" slot="container-end">
+          <svg viewBox="0 0 48 48" ref={progressCircle}>
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+          <span ref={progressContent}></span>
         </div>
+      </Swiper>
       </section>
+
       <div class="seperation"></div>
       <section className='driverSection'>
         <motion.div className="cursor"
@@ -162,22 +215,22 @@ export default function Home(props) {
             <div className="MainRoket" onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <span className='fas fa-rocket'></span>
               <h4>Fast Delivery</h4>
-              <p>Cooperating with TransLogic you are <br />guaranteed to have your cargo <br /> delivered fast and secure.</p>
+              <p>Cooperating with TransLogic you are guaranteed to have your cargo delivered fast and secure.</p>
             </div>
             <div className="MainPhone" onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <span className='fas fa-phone'></span>
               <h4>24/ Support</h4>
-              <p>We provide you with 27/7 support, <br /> which gives you an opportunity to track <br /> your cargo on its way.</p>
+              <p>We provide you with 27/7 support, which gives you an opportunity to track your cargo on its way.</p>
             </div>
             <div className="MainLock" onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <span className='fas fa-lock'></span>
               <h4>Secured Services</h4>
-              <p>We provide all our clients with <br /> professional transportation services on <br /> the highest security level.</p>
+              <p>We provide all our clients with professional transportation services on the highest security level.</p>
             </div>
             <div className="MainWallet" onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <span className='fas fa-wallet'></span>
               <h4>Affordable Prices</h4>
-              <p>We have the lowest prices on the <br /> market and offer affordable solutions <br /> tailored to your business.</p>
+              <p>We have the lowest prices on the market and offer affordable solutions tailored to your business.</p>
             </div>
           </div>
         </div>
@@ -228,7 +281,7 @@ export default function Home(props) {
       >
         <SwiperSlide>
         <div className="userOne">
-          <img src='https://randomuser.me/api/portraits/men/88.jpg' alt="man" />
+          <img src='https://randomuser.me/api/portraits/men/88.jpg' alt="man" loading='lazy' />
           <h5>Robert</h5>
           <p>"Sixty Seconds Logistics secures top-notch loads at unbeatable prices, keeping our trucks moving and profits soaring. A game-changer for our business!"</p>
           <span>
@@ -242,7 +295,7 @@ export default function Home(props) {
         </SwiperSlide>
         <SwiperSlide>
         <div className="userOne">
-          <img src='https://randomuser.me/api/portraits/men/9.jpg' alt="man" />
+          <img src='https://randomuser.me/api/portraits/men/9.jpg' alt="man" loading='lazy'/>
           <h5>John</h5>
           <p>"At Sixty Seconds Logistics, top prices for truck loads are a given. Quick, efficient, and cost-effective – they're our go-to for seamless logistics!"</p>
           <span>
@@ -256,7 +309,7 @@ export default function Home(props) {
         </SwiperSlide>
         <SwiperSlide>
         <div className="userOne">
-          <img src='https://randomuser.me/api/portraits/men/30.jpg' alt="man" />
+          <img src='https://randomuser.me/api/portraits/men/30.jpg' alt="man" loading='lazy'/>
           <h5>Harry</h5>
           <p>"At Sixty Seconds Logistics, top prices, fast. They've got the winning formula for our truck loads – quick, efficient, and cost-friendly!"</p>
           <span>
@@ -270,7 +323,7 @@ export default function Home(props) {
         </SwiperSlide>
         <SwiperSlide>
         <div className="userOne">
-          <img src='https://randomuser.me/api/portraits/men/11.jpg' alt="man" />
+          <img src='https://randomuser.me/api/portraits/men/11.jpg' alt="man" loading='lazy'/>
           <h5>Tom</h5>
           <p>"Sixty Seconds Logistics: Fast prices, faster service. They nail the best deals for our truck loads, keeping our business moving at full speed!"</p>
           <span>

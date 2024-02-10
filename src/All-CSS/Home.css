@@ -14,7 +14,7 @@
     z-index: 20;
 }
 .bannerSection {
-    background: url(https://www.tenfourmagazine.com/content/wp-content/gallery/nov2017cover/NovCvrStory03.jpg);
+    background: url(../assets/image.webp);
     border-image: fill 0 linear-gradient(#0003, #000000a4);
     background-position: center;
     background-repeat: no-repeat;
@@ -29,14 +29,14 @@
     font-size: 4vh;
     font-weight: bolder;
     color: white;
-    padding: 0px 50px;
+    padding: 10px 50px;
 }
 .BannerConent >:nth-child(2){
     font-size: 12px;
     text-wrap: wrap;
     font-weight: 400px;
     color: white;
-    padding: 0px 50px;
+    padding: 10px 50px;
 }
 .BannerConent button{
     font-size: 12px;
@@ -47,7 +47,7 @@
     background-color: #5254ff;
     width: 10rem;
     height: 3rem;
-    margin: 0px 50px;
+    margin: 10px 50px 0px 50px;
     border-radius: 8px;
 }   
 .BannerConent button:hover{
@@ -60,21 +60,27 @@
 .greetings{
     display: flex;
     max-width: 100vw;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .greetingHeading span, .MainSection span, .TruckMain span, .workHeaading span, .priceMainHeading span, .driveeMainHeading span{
     color: #5254ff;
 }
 .greetingHeading >:nth-child(1){
-    font-size: 4vh;
+    font-size: 3vh;
     text-wrap: wrap;
     padding: 0px 50px;
-    padding-top: 60px;
-    width: 30vw;
+    /* padding-top: 70px; */
+    /* width: 30vw; */
 }
 .greetingPara{
-    font-size: 12px;
+    font-size: 14px;
+    margin: 10px 0px;
     text-wrap: wrap;
-    padding: 80px 10px;
+    padding: 0px 30px;
+    text-align: justify;
     width: 70vw;
 }
 
@@ -89,8 +95,9 @@ font-size: 4vh;
 }
 
 .MainContent{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
     align-items: center;
     max-width: 100vw;
     padding-top: 50px;
@@ -101,7 +108,10 @@ font-size: 4vh;
 .MainRoket >:nth-child(1){
     color: #5254ff;
     font-size: 50px;
-    margin-left: 4.2rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    /* margin-left: 4.2rem; */
 }
 .MainRoket >:nth-child(2), .MainPhone >:nth-child(2), .MainLock >:nth-child(2), .MainWallet >:nth-child(2){
     font-size: 15px;
@@ -111,18 +121,23 @@ font-size: 4vh;
 }
 .MainRoket >:nth-child(3), .MainPhone >:nth-child(3),.MainLock >:nth-child(3) , .MainWallet >:nth-child(3){
     font-size: 10px;
-    text-align: center;
+    padding: 0px 50px;
+    text-align: justify;
     text-wrap: wrap;
 }
 .MainPhone >:nth-child(1), .MainLock >:nth-child(1){
     color: #5254ff;
     font-size: 50px;
-    margin-left: 75px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 .MainWallet >:nth-child(1){
     color: #5254ff;
     font-size: 50px;
-    margin-left: 65px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 .TruckMain{
     max-width: 100vw;
@@ -131,43 +146,54 @@ font-size: 4vh;
 .TruckMain >:nth-child(1){
     text-align: center;
     text-wrap: wrap;
-    font-size: 4vh;
+    font-size: 3vh;
 }
-.truckGalery{
+
+.dryVan{
     display: flex;
+    max-width: 100vw;
     align-items: center;
-    justify-content: space-evenly;
-    padding-top: 110px;
-    flex-wrap: wrap;
-    max-width: 100vw;
+    justify-content: center;
+    padding: 40px 20px;
 }
-.PoweOnly, .flatBed, .Reefer, .dryVan, .hotShort, .boxTruck{
-    padding: 10px 140px;
-    max-width: 100vw;
-    
+.dryVan img{
+    width: 40vw;
+    height: 70vh;
 }
-
-.PoweOnly img, .flatBed img, .Reefer img, .dryVan img, .boxTruck img, .hotShort img{
+.dryContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dryContent h6{
+    font-size: 3vh;
+    color: #5254ff;
+    font-weight: 600;
+}
+.dryContentPara{
+    font-size: 14px !important;
+    text-align: justify !important;
+    padding: 10px 20px 0px 20px !important;
+}
+.dryContent button{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400px;
+    color: white;
+    border: none;
+    background-color: #5254ff;
+    width: 10rem;
+    height: 3rem;
     border-radius: 8px;
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
-.PoweOnly :nth-child(2), .flatBed :nth-child(2), .Reefer :nth-child(2), .dryVan :nth-child(2),
-.boxTruck :nth-child(2), .hotShort :nth-child(2){
-    text-align: center;
-    padding-top: 20px;
+.dryContent button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    transition: .5s all ease-in-out;
+    font-weight: 600px;
 }
-.PoweOnly :nth-child(3), .flatBed :nth-child(3), .Reefer :nth-child(3), .dryVan :nth-child(3),
-.boxTruck :nth-child(3), .hotShort :nth-child(3){
-    text-align: center;
-    padding-top: 20px;
-    font-size: 12px;
-    text-wrap: wrap;
-}
-
-
 .priceMain, .driveeMain{
     max-width: 100vw;
 }
@@ -178,10 +204,16 @@ font-size: 4vh;
     margin-top: 110px;
 }
 .priceMainPara, .driveMainPara{
+    text-align: justify;
+    text-wrap: wrap;
+    font-size: 12px;
+    padding: 20px 40px;
+}
+.driveMainPara{
     text-align: center;
     text-wrap: wrap;
     font-size: 12px;
-    padding: 20px 10px;
+    padding: 20px 40px;
 }
 .priceCards, .driveCards{
     display: flex;
@@ -210,8 +242,16 @@ span i{
     scale: 1.05;
     transition: .3s all linear;
 }
-.priceCardone h2, .priceCardtwo h2, .priceCardthree h2{
-    font-size: 2.5vh;
+.priceCardone h2,.priceCardthree h2{
+    font-size: 2vh;
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px 0px;
+    background-color: #5254ff;
+    color: white;
+}
+.priceCardtwo h2{
+    font-size: 2vh;
     text-align: center;
     font-weight: bolder;
     padding: 10px 0px;
@@ -243,7 +283,7 @@ span i{
     font-weight: bold;
     padding-top: 15px;
 }
-.driveCardone h5, .driveCardtwo h5, .driveCardthree h5, .driveCardfour h5{
+.driveCardtwo h5, .driveCardfour h5{
     font-size: 2vh;
     text-align: center;
     font-weight: bolder;
@@ -251,8 +291,16 @@ span i{
     background-color: #5254ff;
     color: white;
 }
-.driveCardone p, .driveCardtwo p, .driveCardthree p, .driveCardfour p{
+.driveCardone h5, .driveCardthree h5{
+    font-size: 2vh;
     text-align: center;
+    font-weight: bolder;
+    padding: 20px 3px;
+    background-color: #5254ff;
+    color: white;
+}
+.driveCardone p, .driveCardtwo p, .driveCardthree p, .driveCardfour p{
+    text-align: justify;
     text-wrap: wrap;
     padding: 30px 10px;
     font-size: 12px;
@@ -269,7 +317,6 @@ span i{
     left: 0;
     top: 0;
     background-color: white;
-    /* transition: all linear 0.1s; */
     mix-blend-mode: difference;
     pointer-events: none;
     z-index: 10000;
@@ -374,10 +421,6 @@ span i{
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
   }
-  
-  
-  
-  
 @media screen and (max-width: 850px) {
     .bannerSection{
         object-position: center;
@@ -401,7 +444,7 @@ span i{
     }
     .greetingHeading >:nth-child(1){
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
     .greetingPara{
         width: 100%;
@@ -409,18 +452,35 @@ span i{
         padding: 20px 20px;
     }
     .MainContent{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .MainPhone,.MainWallet,.MainLock{
         padding: 30px 0px;
     }
-    .truckGalery{
-        grid-gap: 20px;
+    .MainRoket >:nth-child(3), .MainPhone >:nth-child(3),.MainLock >:nth-child(3) , .MainWallet >:nth-child(3){
+        font-size: 10px;
+        padding: 10px 20px;
+        text-align: justify;
+        text-wrap: wrap;
     }
-    .PoweOnly, .flatBed, .Reefer, .dryVan, .hotShort, .boxTruck{
-        padding: 10px 0px;
+    .dryVan{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    
+    .dryVan img{
+        width: 50vh;
+        height: 50vh;
+    }
+    .dryContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .priceCardone button, .priceCardtwo button, .priceCardthree button{
         margin-top: 30px;
     }
@@ -428,9 +488,16 @@ span i{
         font-size: 1vh;
         text-wrap: wrap;
         padding: 0px 20px;
+        text-align: justify;
     }
 
     #testimain{
         background-attachment: scroll ;
     }
+    .driveMainPara{
+        text-align: justify;
+    }
 }
+    /* @media screen and (min-width: 850px) and (max-width: 1280px) {
+      
+    } */
