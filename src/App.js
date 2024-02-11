@@ -48,7 +48,7 @@ export default function App() {
     setLoading(true)
     setTimeout(() =>{
       setLoading(false)
-    }, 4000)
+    }, 100)
   }, [])
   return (
     <>
