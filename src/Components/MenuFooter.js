@@ -25,13 +25,13 @@ export const MenuFooter =[
 },
 {
     title: "Freight Rates",
-    url: "/Freightrates",
+    url: "/Freight-Rates",
     cName:"footer-links",
     icon:"fa-solid fa-truck"
 },
 {
     title: "Rate Negociation",
-    url: "/Ratenegociations",
+    url: "/Rate-Negociation",
     cName:"footer-links",
     icon:"fa-solid fa-handshake"
 },

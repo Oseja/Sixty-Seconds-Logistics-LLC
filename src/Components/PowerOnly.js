@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import Poweronly from '../assets/ps-power.webp'
 import '../All-CSS/Trucks.css'
 import { Helmet } from 'react-helmet';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 export default function PowerOnly(props) {
     const [mousePosition, setMousePosition] = useState({
@@ -40,6 +42,9 @@ export default function PowerOnly(props) {
     
       const textEnter = () => setcursorVariants("text");
       const textLeave = () => setcursorVariants("default");
+      useEffect(()=>{
+        AOS.init({duration: 2000});
+      },[]);
   return (
     <>
     <Helmet>
@@ -53,20 +58,20 @@ export default function PowerOnly(props) {
       </div>
     <section>
     <div className="dryBanner">
-          <h1>Sixty Seconds Logistics LLC | Power Only  </h1>
-          <span><h5><Link to="/">Home</Link>&gt; Power Only</h5></span>
+          <h1  data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Sixty Seconds Logistics LLC | Power Only  </h1>
+          <span><h5  data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"><Link to="/">Home</Link>&gt; Power Only</h5></span>
         </div>
     </section>
     <section>
         <div className="Maindry" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="dryContent">
-            <h1>Truck types – <span>Power Only</span></h1>
-            <p>Power-only trucks are vehicles specifically designed to haul trailers without carrying any cargo themselves. They provide the necessary towing capacity to transport trailers loaded with freight, but unlike traditional trucks, they do not carry their own cargo. This setup allows for efficient transportation of goods while maximizing flexibility in trailer usage and minimizing operational costs. Power-only trucks are commonly used in logistics and transportation to move trailers between locations or to assist with overflow freight.</p>
-            <div className="buttonContact">
+            <h1  data-aos="fade-up" data-aos-delay="500" data-aos-duration="900">Truck types – <span>Power Only</span></h1>
+            <p  data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">Power-only trucks are vehicles specifically designed to haul trailers without carrying any cargo themselves. They provide the necessary towing capacity to transport trailers loaded with freight, but unlike traditional trucks, they do not carry their own cargo. This setup allows for efficient transportation of goods while maximizing flexibility in trailer usage and minimizing operational costs. Power-only trucks are commonly used in logistics and transportation to move trailers between locations or to assist with overflow freight.</p>
+            <div className="buttonContact"  data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">
           <Link to="/Contact"><button>Contact US &gt;</button></Link>
         </div>
         </div>
-        <div className="dryImage">
+        <div className="dryImage"  data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
           <img src={Poweronly} alt="Poweronly" loading='lazy' />
         </div>
            

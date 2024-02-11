@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import boxtruck from '../assets/box-truck.webp'
 import '../All-CSS/Trucks.css'
 import { Helmet } from 'react-helmet';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 export default function Boxtruck(props) {
     const [mousePosition, setMousePosition] = useState({
@@ -37,7 +39,9 @@ export default function Boxtruck(props) {
           y: mousePosition.y - 75
         }
       }
-    
+      useEffect(()=>{
+        AOS.init({duration: 2000});
+      },[]);
       const textEnter = () => setcursorVariants("text");
       const textLeave = () => setcursorVariants("default");
   return (
@@ -53,21 +57,21 @@ export default function Boxtruck(props) {
       </div>
     <section>
     <div className="dryBanner">
-          <h1>Sixty Seconds Logistics LLC | Box Truck  </h1>
-          <span><h5><Link to="/">Home</Link>&gt; Box Truck </h5></span>
+          <h1 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"> Sixty Seconds Logistics LLC | Box Truck  </h1>
+          <span><h5 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"><Link to="/">Home</Link>&gt; Box Truck </h5></span>
         </div>
     </section>
     <section>
         <div className="Maindry" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <div className="dryContent">
-            <h1>Truck types – <span>Box Truck</span></h1>
-            <p>Box trucks are specialized vehicles designed with an enclosed cargo area, resembling a large, square-shaped box. They are commonly used for transporting a variety of goods, equipment, or materials over short to medium distances. Box trucks offer versatility in cargo handling, providing protection from weather elements and theft. With their accessible rear cargo doors and spacious interior, they facilitate easy loading and unloading of freight. Box trucks are essential in urban environments, where larger trucks may have difficulty maneuvering, and they serve various industries including retail, delivery services, moving companies, and logistics.</p>
-            <div className="buttonContact">
+            <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="900">Truck types – <span>Box Truck</span></h1>
+            <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">Box trucks are specialized vehicles designed with an enclosed cargo area, resembling a large, square-shaped box. They are commonly used for transporting a variety of goods, equipment, or materials over short to medium distances. Box trucks offer versatility in cargo handling, providing protection from weather elements and theft. With their accessible rear cargo doors and spacious interior, they facilitate easy loading and unloading of freight. Box trucks are essential in urban environments, where larger trucks may have difficulty maneuvering, and they serve various industries including retail, delivery services, moving companies, and logistics.</p>
+            <div className="buttonContact" data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">
           <Link to="/Contact"><button>Contact US &gt;</button></Link>
         </div>
         </div>
         <div className="dryImage">
-          <img src={boxtruck} alt="Boxtruck" loading='lazy'/>
+          <img src={boxtruck} data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" alt="Boxtruck" loading='lazy'/>
         </div>
            
         </div>

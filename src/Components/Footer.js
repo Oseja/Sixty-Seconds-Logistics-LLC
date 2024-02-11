@@ -1,14 +1,19 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../All-CSS/Footer.css'
 import logo from '../logo.svg'
 import { Link } from 'react-router-dom'
 import { MenuFooter } from './MenuFooter'
 import { MenuFooterTwo } from './MenuFooterTwo'
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 export default function Footer(props) {
+    useEffect(()=>{
+        AOS.init({duration: 2000});
+      },[]);
     return (
         <>
-            <footer>
-                <div className='FooterItems'>
+            <footer > 
+                <div className='FooterItems' data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <div className="logoContent">
                         <Link exact to="/"><img src={logo} className="FooterApp-logo" alt="logo" /></Link>
                         <p>We are a professional truck dispatch company that provides quality services for owner-operators and small trucking companies.We help find the best freight load possible with the highest prices and focus on keeping you loaded on a weekly basis and much more.</p>
@@ -85,9 +90,9 @@ export default function Footer(props) {
                             </Link><Link to="https://www.pinterest.com/sixtysecondslogistics/">
                                 <li><i className='fab fa-pinterest'></i></li>
                             </Link>
-                            {/* <Link to="">
+                            <Link to="https://api.whatsapp.com/send?phone=18324227704">
                                 <li><i className='fab fa-whatsapp'></i></li>
-                            </Link> */}
+                            </Link>
                             <Link to="https://www.threads.net/@sixtysecondslogistics">
                                 <li><i className='fab fa-threads'></i></li>
                             </Link>

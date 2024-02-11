@@ -8,6 +8,8 @@ import Swal from 'sweetalert2';
 import 'react-phone-input-2/lib/style.css'
 import '../All-CSS/Contact.css';
 import { Helmet } from 'react-helmet';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 export default function Contact(props) {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -95,6 +97,9 @@ export default function Contact(props) {
         console.error(error);
       });
     }
+    useEffect(()=>{
+      AOS.init({duration: 2000});
+    },[]);
   return (
     <>
     <Helmet>
@@ -108,36 +113,37 @@ export default function Contact(props) {
       </div>
       <section>
         <div className="contactBanner">
-          <h1>Sixty Seconds Logistics LLC | Contact US  </h1>
-          <span><h5><Link to="/">Home</Link>&gt; Contact</h5></span>
+          <h1 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Sixty Seconds Logistics LLC | Contact US  </h1>
+          <span><h5 data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000"><Link to="/">Home</Link>&gt; Contact</h5></span>
         </div>
       </section>
       <section>
         <div className="addressMain">
           <div className="IconsMain">
-            <div className="phone" style={{backgroundColor: props.mode === 'light' ? 'black' : 'white'}} onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <i className='fas fa-phone'></i><span>Phone Number:</span><br />
-              <Link to="tel:+1(832) 422-7704" style={{color: props.mode === 'light' ? 'white' : 'black'}}>+1(832) 422-7704</Link>
+            <div className="phone" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <i data-aos="fade-up" data-aos-delay="500" data-aos-duration="800" className='fas fa-phone'></i><span>Phone Number:</span><br />
+              <Link to="tel:+1(832) 422-7704" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}>+1(832) 422-7704</Link>
             </div>
-            <div className="address" style={{backgroundColor: props.mode === 'light' ? 'black' : 'white'}} onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <i className='fas fa-map-marker-alt'></i><span>Address:</span> <br />
-              <h1 style={{color: props.mode === 'light' ? 'white' : 'black'}}>2525 S Voss Rd, Houston TX 77057.</h1>
+            <div className="address" data-aos="fade-up" data-aos-delay="600" data-aos-duration="900" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <i className='fas fa-map-marker-alt' data-aos="fade-up" data-aos-delay="700" data-aos-duration="800"></i><span>Address:</span> <br />
+              <h1 style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}>2525 S Voss Rd, Houston TX 77057.</h1>
             </div>
-            <div className="email" style={{backgroundColor: props.mode === 'light' ? 'black' : 'white'}} onMouseEnter={textEnter} onMouseLeave={textLeave}>
-              <i className='fas fa-envelope'></i><span>Email:</span> <br />
-              <Link to="mailto:dispatch@sixtysecondslogistics.com" style={{color: props.mode === 'light' ? 'white' : 'black'}}>dispatch@sixtysecondslogistics.com</Link>
+            <div className="email" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <i className='fas fa-envelope' data-aos="fade-up" data-aos-delay="900" data-aos-duration="800"></i><span>Email:</span> <br />
+              <Link to="mailto:dispatch@sixtysecondslogistics.com" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}>dispatch@sixtysecondslogistics.com</Link>
             </div>
           </div>
         </div>
       </section>
       <section>
         <div className="formMain">
-          <div className="form" style={{backgroundColor: props.mode === 'light' ? 'black' : 'white'}}>
-            <form method='post' onSubmit={submitForm} style={{color: props.mode === 'light' ? 'white' : 'black'}}>
-            <h1 className="form-heading" onMouseEnter={textEnter} onMouseLeave={textLeave}>Get Free Quote Now</h1>
+          <div className="form" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}>
+            <form method='post' onSubmit={submitForm} style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}>
+            <h1 data-aos="fade-up" data-aos-delay="300" data-aos-duration="900" className="form-heading" onMouseEnter={textEnter} onMouseLeave={textLeave}>Get Free Quote Now</h1>
             <input
+            data-aos="fade-up" data-aos-delay="400" data-aos-duration="900"
             onMouseEnter={textEnter} onMouseLeave={textLeave}
-            style={{color: props.mode === 'light' ? 'white' : 'black', border: props.mode === 'light' ? '1px solid white' : '1px solid black'}}
+            style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white', border: props.mode === 'light' ? '1px solid #222' : '1px solid #ebebeb'}}
               type="text"
               placeholder="Enter Your Name"
               className="form-name"
@@ -148,8 +154,9 @@ export default function Contact(props) {
               value={data.cname}
             />
             <input
+            data-aos="fade-up" data-aos-delay="500" data-aos-duration="900"
             onMouseEnter={textEnter} onMouseLeave={textLeave}
-            style={{color: props.mode === 'light' ? 'white' : 'black', border: props.mode === 'light' ? '1px solid white' : '1px solid black'}}
+            style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white', border: props.mode === 'light' ? '1px solid #222' : '1px solid #ebebeb'}}
               type="email"
               placeholder="Enter Your Email"
               className="form-email"
@@ -158,8 +165,9 @@ export default function Contact(props) {
               onChange={handleChange}
               value={data.cemail}
             />
-            <div className="phone-country">
+            <div className="phone-country" data-aos="fade-up" data-aos-delay="600" data-aos-duration="900">
               <PhoneInput
+              
               onMouseEnter={textEnter} onMouseLeave={textLeave}
                 country={'us'} 
                 value={data.cphone}
@@ -170,30 +178,29 @@ export default function Contact(props) {
                   setData({ ...data, code: countryCode, cphone: phoneNumber });
                 }}
                 inputStyle={{
-                  backgroundColor: props.mode === 'light' ? 'black' : 'white',
-                  color: props.mode === 'light' ? 'white' : 'black',
-                  height: '5rem',border: props.mode === 'light' ? '1px solid white' : '1px solid black',
+                  backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white',
+                  height: '5rem',border: props.mode === 'light' ? '1px solid #222' : '1px solid #ebebeb',
                   borderRadius: '.7rem',
                   width: props.screenWidth <= 850 ? '30vw' : '100%',
                 }}
                 dropdownStyle={{
-                  backgroundColor: props.mode === 'light' ? 'black' : 'white',
-                  color: props.mode === 'light' ? 'white' : 'black',
-                  border: props.mode === 'light' ? '1px solid white' : '1px solid black'}}                
+                  backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white',
+                  border: props.mode === 'light' ? '1px solid #222' : '1px solid #ebebeb'}}                
                 inputProps={{
                   name: 'cphone',
                   required: true,
                 }}
                 buttonStyle={{
-                  backgroundColor: props.mode === 'light' ? 'black' : 'white',
-                  color: props.mode === 'light' ? 'white' : 'black',
+                  backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white',
                   borderRadius: '.4rem'
                 }}
               />
               <input
+              data-aos="fade-up" data-aos-delay="700" data-aos-duration="900"
               onMouseEnter={textEnter} onMouseLeave={textLeave}
-              style={{color: props.mode === 'light' ? 'white' : 'black', border: props.mode === 'light' ? '1px solid white' : '1px solid black'}}
+              style={{color: props.mode === 'light' ? 'black' : 'white', border: props.mode === 'light' ? '1px solid #222' : '1px solid #ebebeb'}}
                 type="date"
+                placeholder='Enter Date Here'
                 className="form-date"
                 name="cdate"
                 required
@@ -201,8 +208,9 @@ export default function Contact(props) {
                 value={data.cdate}
               />
                <textarea
+               data-aos="fade-up" data-aos-delay="600" data-aos-duration="800"
                onMouseEnter={textEnter} onMouseLeave={textLeave}
-               style={{color: props.mode === 'light' ? 'white' : 'black', border: props.mode === 'light' ? '1px solid white' : '1px solid black'}}
+               style={{color: props.mode === 'light' ? 'black' : 'white', border: props.mode === 'light' ? '1px solid #222' : '1px solid #ebebeb'}}
               placeholder="Message"
               name="cmessage"
               className="form-message"
@@ -210,13 +218,13 @@ export default function Contact(props) {
               onChange={handleChange}
               value={data.cmessage}
             ></textarea>
-            <div className="buttonForm">
+            <div className="buttonForm" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
             <button type="submit" className="form-btn" name="savebtn" onMouseEnter={textEnter} onMouseLeave={textLeave}>Submit</button>
             </div>
             </div>
             </form>
           </div>
-          <div className="formImage">
+          <div className="formImage" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
             <img src={FormImg} alt="iamge form" onMouseEnter={textEnter} onMouseLeave={textLeave} loading='lazy'/>
           </div>
         </div>

@@ -4,7 +4,6 @@ import About from './Components/About'
 import Services from './Components/Services'
 import Contact from './Components/Contact'
 import Navbar from './Components/Navbar'
-import Alert from './Components/Alert'
 import Footer from './Components/Footer'
 import PowerOnly from './Components/PowerOnly'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -13,34 +12,25 @@ import Reefer from './Components/Reefer'
 import Flatbed from './Components/Flatbed'
 import Boxtruck from './Components/Boxtruck'
 import Hotshort from './Components/Hotshort'
+import Freight from './Components/Freight'
+import Rate from './Components/Rate'
 import CircleLoader from "react-spinners/CircleLoader";
 import './App.css'
 export default function App() {
 
-  const [alert, setAlert] = useState(null);
   const [mode, setMode] = useState('light');
 
-  const showAlert = (message, type) => {
-    setAlert({
-      msg: message,
-      type: type,
-    });
-    setTimeout(() => {
-      setAlert(null);
-    }, 1500);
-  };
+ 
 
   const toggleMode = () => {
     if (mode === 'dark') {
       setMode('light');
       document.body.style.backgroundColor = 'white';
       document.body.style.color = 'black';
-      showAlert('The Light Mode Has Been Enabled', 'success');
     } else {
       setMode('dark');
       document.body.style.backgroundColor = 'black';
       document.body.style.color = 'white';
-      showAlert('The Dark Mode Has Been Enabled', 'success');
     }
   };
   const [loading , setLoading] = useState(false);
@@ -67,7 +57,6 @@ export default function App() {
     :
      <BrowserRouter>
      <Navbar mode={mode} toggleMode={toggleMode}/>
-     <Alert alert={alert}/>
         <Routes>
         <Route path="/" element={<Home mode={mode} toggleMode={toggleMode}/>} />
         <Route path="/About" element={<About mode={mode} toggleMode={toggleMode} />} />
@@ -79,6 +68,8 @@ export default function App() {
         <Route path="/Flatbed" element={<Flatbed mode={mode} toggleMode={toggleMode} />} />
         <Route path="/Boxtruck" element={<Boxtruck mode={mode} toggleMode={toggleMode} />} />
         <Route path="/Hotshort" element={<Hotshort mode={mode} toggleMode={toggleMode} />} />
+        <Route path="/Freight-Rates" element={<Freight mode={mode} toggleMode={toggleMode} />} />
+        <Route path="/Rate-Negociation" element={<Rate mode={mode} toggleMode={toggleMode} />} />
         </Routes>
         <Footer mode={mode} toggleMode={toggleMode}/>
       </BrowserRouter>

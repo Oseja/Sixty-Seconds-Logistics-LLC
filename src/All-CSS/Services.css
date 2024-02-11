@@ -1,10 +1,20 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     cursor: none;
+}
+.seperation{
+    height: 7px;
+    background-color: rgba(207, 207, 207, 0.356);
+    /* background-color: #ebebeb; */
+    margin: 8px auto;
+    position: relative;
+    z-index: 20;
 }
 .serviceBanner{
     max-width: 100vw;
@@ -13,11 +23,32 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    object-fit: cover;
-    border-image: fill 0 linear-gradient(#0003, #000000a4);
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-border-image: fill 0 -o-linear-gradient(#0003, #000000a4);
+       border-image: fill 0 -webkit-gradient(linear, left top, left bottom, from(#0003), to(#000000a4));
+       border-image: fill 0 linear-gradient(#0003, #000000a4);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.cursor{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 10000;
 }
 .serviceBanner h1{
     font-size: 3vh;
@@ -45,14 +76,25 @@
     color: #5254ff;
 }
 .main{
+    display: -ms-grid;
     display: grid;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 .serviceOne{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 10px 0px;
 }
 .iconn{
@@ -60,9 +102,15 @@
     border-radius: 50%;
     height: 100px;
     width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .iconn i{
     color: #5254ff;
@@ -84,7 +132,9 @@
 .buttonService button{
     position: relative;
     left: 50%;
-    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
     font-size: 12px;
     text-align: center;
     font-weight: 400px;
@@ -100,6 +150,8 @@
     background-color: black;
     color: white;
     border: 1px solid white;
+    -webkit-transition: .5s all ease-in-out;
+    -o-transition: .5s all ease-in-out;
     transition: .5s all ease-in-out;
     font-weight: 600px;
 }  
@@ -115,7 +167,10 @@
         margin: 0px 20px;
     }
     .serviceOne{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .content{
         width: 100%;

@@ -97,7 +97,7 @@ useEffect(()=>{
         </div>
          <Swiper
          data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
-         style={{border:props.mode === 'light' ? '1px solid white' : '1px solid white'}}
+         style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} 
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -190,22 +190,22 @@ useEffect(()=>{
           <h1 className='driveeMainHeading' data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Few Steps for a <span>Success</span> Driver</h1>
           <p className='driveMainPara' data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Follow a few easy steps to get truck dispatch services that can help you with finding freight, driver management, billing, and more.</p>
           <div className="driveCards">
-            <div className="driveCardone" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? 'black' : 'white', color: props.mode === 'light' ? 'white' : 'black' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <div className="driveCardone" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <h1>Step 1</h1>
               <h5>Get in touch with us</h5>
               <p>Apply using this form or by phone call: <Link to="tel:+1(832) 422-7704">+1(832) 422-7704</Link></p>
             </div>
-            <div className="driveCardtwo" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? 'black' : 'white', color: props.mode === 'light' ? 'white' : 'black' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <div className="driveCardtwo" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}   onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <h1>Step 2</h1>
               <h5>Send us your documentation</h5>
               <p>Make sure you have all the necessary documents ( MC certificate, W9 form, insurance )</p>
             </div>
-            <div className="driveCardthree" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? 'black' : 'white', color: props.mode === 'light' ? 'white' : 'black' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <div className="driveCardthree" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}  onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <h1>Step 3</h1>
               <h5>Sign the documentation</h5>
               <p>Sign the dispatch agreement that gives us a right to represent the customer's company on its behalf among different people.</p>
             </div>
-            <div className="driveCardfour" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? 'black' : 'white', color: props.mode === 'light' ? 'white' : 'black' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <div className="driveCardfour" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}  onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <h1>Step 4</h1>
               <h5>That's all. Let's drive and make money!</h5>
               <p>We are all set and we now start to get you the best high paying loads.</p>
@@ -247,17 +247,17 @@ useEffect(()=>{
           <h1 className='priceMainHeading' data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">What Are The <span>Advantages</span></h1>
           <p className='priceMainPara' data-aos="fade-up" data-aos-delay="250" data-aos-duration="1000">Professional truck dispatch service can bring you lots of advantages. The main opponent of this kind of services are the freight brokers. In contrast to them, our services focus on you and we technically work for you. So, our interest is to increase the quality and profitability of your services. On the other hand, a freight broker focuses on charging the suppliers as much as possible and paying you as little as possible.</p>
           <div className="priceCards">
-            <div className="priceCardone" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? 'black' : 'white', color: props.mode === 'light' ? 'white' : 'black' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <div className="priceCardone" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <span><i className='fas fa-user-clock'></i></span>
               <h2 data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Save your time</h2>
               <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">We can handle all the services that a trucking company or an owner-operator may need. From paperwork to billing, we can count on us. This way, you will just pick and deliver the loads that we chose together.</p>
             </div>
-            <div className="priceCardtwo" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? 'black' : 'white', color: props.mode === 'light' ? 'white' : 'black' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <div className="priceCardtwo" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}  onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <span><i className='fas fa-truck'></i></span>
               <h2 data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">Benefit from personalized plans</h2>
               <p data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">We have a wide range of plan options. The wishes and needs of companies are different, so we can’t just apply a general method. Communication is the key to amazing results in the shortest period of time possible.</p>
             </div>
-            <div className="priceCardthree" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? 'black' : 'white', color: props.mode === 'light' ? 'white' : 'black' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <div className="priceCardthree" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}  onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <span><i className='fas fa-credit-card'></i></span>
               <h2 data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">Increase your profit</h2>
               <p data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">A freight dispatcher finds you high paid loads and negotiates in your favor. So, you’ll work less and earn more. They work on your behalf and make sure that you increase your profit as much as possible. Also, our profesionist track the daily rates and make sure that the price of the load is well defined. We try to offer you the best freight rates!</p>

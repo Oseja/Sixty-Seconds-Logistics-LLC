@@ -27,8 +27,8 @@ const Navbar = ({ mode, toggleMode }) => {
     <>
       <nav className={`NavbarItems navbar-${mode} bg-${mode}`}>
         <Link exact to="/"><img src={logo}  data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000" className="App-logo" alt="logo" /></Link>
-        <div className="modeIcon" onClick={handleDarkModeClick}>
-          <i className={mode === 'light' ? "fa-solid fa-sun" : "fa-solid fa-moon"}></i>
+        <div className="modeIcon" onClick={handleDarkModeClick} >
+          <i className={mode === 'light' ? "fa-solid fa-moon" : "fa-solid fa-sun"}></i>
         </div>
         <div className="menu-icons" onClick={handleMenuClick} >
           <i className={`${clicked ? "fas fa-times" : "fas fa-bars"} ${mode === 'dark' ? 'dark-mode-text' : ''}`} ></i>
@@ -38,11 +38,10 @@ const Navbar = ({ mode, toggleMode }) => {
             <li key={index}>
               <Link
                 exact
-                data-aos="fade-down" data-aos-delay="100" data-aos-duration="1000"
                 to={item.url}
                 className={`${item.cName} ${mode === 'dark' ? 'dark-mode-text' : ''}`}
               >
-                <i className={item.icon}  data-aos="fade" data-aos-delay="100" data-aos-duration="1000"></i>
+                <i className={item.icon}></i>
                 {item.title}
               </Link>
             </li>
