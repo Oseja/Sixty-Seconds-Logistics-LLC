@@ -216,7 +216,7 @@ useEffect(()=>{
       <div className="seperation"></div>
       <section>
         <div className="MainSection" >
-          <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Our <span>Advantage</span></h1>
+          <h1 onMouseEnter={textEnter} onMouseLeave={textLeave} data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">Our <span>Services</span></h1>
           <div className="MainContent">
             <div className="MainRoket" onMouseEnter={textEnter} onMouseLeave={textLeave} data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
               <span className='fas fa-rocket'></span>

@@ -256,7 +256,7 @@ font-size: 4vh;
     text-align: justify;
     text-wrap: wrap;
     font-size: 12px;
-    padding: 20px 40px;
+    padding: 30px 100px;
 }
 .driveMainPara{
     text-align: center;
@@ -520,9 +520,16 @@ span i{
             transform: rotate(-90deg);
   }
 @media screen and (max-width: 850px) {
+    .cursor{
+        display: none;
+
+    }
     .bannerSection{
         -o-object-position: center;
            object-position: center;
+    }
+    .priceMainPara{
+        padding: 10px 20px;
     }
     .BannerConent >:nth-child(1){
     font-size: 3vh;

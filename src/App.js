@@ -38,7 +38,7 @@ export default function App() {
     setLoading(true)
     setTimeout(() =>{
       setLoading(false)
-    }, 100)
+    }, 2000)
   }, [])
   return (
     <>
@@ -50,8 +50,6 @@ export default function App() {
       loading={loading}
       size={150}
       className='App'
-      // aria-label="Loading Spinner"
-      // data-testid="loader"
       />
       </div>
     :

@@ -130,7 +130,7 @@ export default function Contact(props) {
             </div>
             <div className="email" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <i className='fas fa-envelope' data-aos="fade-up" data-aos-delay="900" data-aos-duration="800"></i><span>Email:</span> <br />
-              <Link to="mailto:dispatch@sixtysecondslogistics.com" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}>dispatch@sixtysecondslogistics.com</Link>
+              <Link to="mailto:support@sixtysecondslogistics.com" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}>support@sixtysecondslogistics.com</Link>
             </div>
           </div>
         </div>

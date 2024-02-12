@@ -56,7 +56,7 @@ export default function Footer(props) {
                                 className='footer-links-contact'><i className='fas fa-map-marker-alt'></i><span>SIXTY SECONDS LOGISTICS LLC. <br />
                                     2525 S Voss Rd, Houston TX 77057. </span></li>
                             <li className='footer-links-contact'><i className='fas fa-envelope'></i>
-                                <span className='maillink'><Link to="mailto:dispatch@sixtysecondslogistics.com">dispatch@sixtysecondslogistics.com</Link></span></li>
+                                <span className='maillink'><Link to="mailto:support@sixtysecondslogistics.com">support@sixtysecondslogistics.com</Link></span></li>
                             <li className='footer-links-contact'><i className='fas fa-globe'></i>
                                 <span className='weblink'><Link to="www.sixtysecondslogistics.com">www.sixtysecondslogistics.com
                                 </Link></span></li>
