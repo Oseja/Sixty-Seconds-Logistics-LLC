@@ -50,6 +50,7 @@ export default function PowerOnly(props) {
     <Helmet>
     <title>Sixty Seconds Logistics LLC - Power Only</title>
         <meta name="description" content="Truck Logistic Company" />
+        <link rel='canonical' href='/Poweronly'/>
     </Helmet>
      <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"

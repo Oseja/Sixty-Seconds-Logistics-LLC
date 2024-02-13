@@ -50,6 +50,7 @@ export default function Hotshort(props) {
     <Helmet>
     <title>Sixty Seconds Logistics LLC - HotShort</title>
         <meta name="description" content="Truck Logistic Company" />
+        <link rel='canonical' href='/Hotshort'/>
     </Helmet>
      <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"

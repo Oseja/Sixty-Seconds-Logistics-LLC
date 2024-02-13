@@ -74,7 +74,7 @@ export default function Contact(props) {
       },
       allowOutsideClick: false, 
     });
-    axios.post('http://localhost/SixtySecondsForm/sixtySeconds.php', sendData)
+    axios.post('/sixtySeconds.php', sendData)
       .then((result) => {
         console.log(result.data); 
         if (result.data.status === 'valid') {
@@ -105,6 +105,7 @@ export default function Contact(props) {
     <Helmet>
     <title>Sixty Seconds Logistics LLC - Contact</title>
         <meta name="description" content="Truck Logistic Company" />
+        <link rel='canonical' href='/Contact'/>
     </Helmet>
       <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"

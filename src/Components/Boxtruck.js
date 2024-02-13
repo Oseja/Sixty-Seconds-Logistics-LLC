@@ -49,6 +49,7 @@ export default function Boxtruck(props) {
     <Helmet>
     <title>Sixty Seconds Logistics LLC - BoxTruck</title>
         <meta name="description" content="Truck Logistic Company" />
+        <link rel='canonical' href='/Boxtruck'/>
     </Helmet>
      <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"

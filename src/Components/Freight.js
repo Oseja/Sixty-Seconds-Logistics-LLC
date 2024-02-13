@@ -49,6 +49,7 @@ export default function Freight() {
      <Helmet>
     <title>Sixty Seconds Logistics LLC - Freight-Rates</title>
         <meta name="description" content="Truck Logistic Company" />
+        <link rel='canonical' href='/Freight-Rates'/>
     </Helmet>
         <motion.div className="cursor"
           variants={variants}

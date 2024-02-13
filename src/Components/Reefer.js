@@ -50,6 +50,7 @@ export default function Reefer(props) {
     <Helmet>
     <title>Sixty Seconds Logistics LLC - Reefer</title>
         <meta name="description" content="Truck Logistic Company" />
+        <link rel='canonical' href='/Reefer'/>
     </Helmet>
      <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"

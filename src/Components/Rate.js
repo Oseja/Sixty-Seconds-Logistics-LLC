@@ -49,6 +49,7 @@ export default function Rate() {
     <Helmet>
    <title>Sixty Seconds Logistics LLC - Rate-Negociation</title>
        <meta name="description" content="Truck Logistic Company" />
+       <link rel='canonical' href='/Rate-Negociation'/>
    </Helmet>
        <motion.div className="cursor"
          variants={variants}

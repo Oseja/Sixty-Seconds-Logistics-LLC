@@ -5,8 +5,12 @@ import  Dryvan from '../assets/Dryvan.webp'
 import  Poweronly from '../assets/Poweronly.webp'
 import  Reefer from '../assets/Reefer.webp'
 import  Flatbed from '../assets/Flatbed.webp'
-import  Boxtruck2 from '../assets/Boxtruck2.jpg'
+import  Boxtruck2 from '../assets/Boxtruck2.webp'
 import  hotshorttt1 from '../assets/hotshorttt1.webp'
+import  user88 from '../assets/user88.webp'
+import  user30 from '../assets/user30.webp'
+import  user11 from '../assets/user11.webp'
+import  user9 from '../assets/user9.webp'
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -70,6 +74,7 @@ useEffect(()=>{
     <Helmet>
     <title>Sixty Seconds Logistics LLC - Home</title>
         <meta name="description" content="Truck Logistic Company" />
+        <link rel='canonical' href='/'/>
     </Helmet>
       <section>
         <div className="bannerSection">
@@ -287,7 +292,7 @@ useEffect(()=>{
       >
         <SwiperSlide>
         <div className="userOne">
-          <img src='https://randomuser.me/api/portraits/men/88.jpg' alt="man" loading='lazy' />
+          <img src={user88} alt="man" loading='lazy' />
           <h5>Robert</h5>
           <p>"Sixty Seconds Logistics secures top-notch loads at unbeatable prices, keeping our trucks moving and profits soaring. A game-changer for our business!"</p>
           <span>
@@ -301,7 +306,7 @@ useEffect(()=>{
         </SwiperSlide>
         <SwiperSlide>
         <div className="userOne">
-          <img src='https://randomuser.me/api/portraits/men/9.jpg' alt="man" loading='lazy'/>
+          <img src={user9} alt="man" loading='lazy'/>
           <h5>John</h5>
           <p>"At Sixty Seconds Logistics, top prices for truck loads are a given. Quick, efficient, and cost-effective – they're our go-to for seamless logistics!"</p>
           <span>
@@ -315,7 +320,7 @@ useEffect(()=>{
         </SwiperSlide>
         <SwiperSlide>
         <div className="userOne">
-          <img src='https://randomuser.me/api/portraits/men/30.jpg' alt="man" loading='lazy'/>
+          <img src={user30} alt="man" loading='lazy'/>
           <h5>Harry</h5>
           <p>"At Sixty Seconds Logistics, top prices, fast. They've got the winning formula for our truck loads – quick, efficient, and cost-friendly!"</p>
           <span>
@@ -329,7 +334,7 @@ useEffect(()=>{
         </SwiperSlide>
         <SwiperSlide>
         <div className="userOne">
-          <img src='https://randomuser.me/api/portraits/men/11.jpg' alt="man" loading='lazy'/>
+          <img src={user11} alt="man" loading='lazy'/>
           <h5>Tom</h5>
           <p>"Sixty Seconds Logistics: Fast prices, faster service. They nail the best deals for our truck loads, keeping our business moving at full speed!"</p>
           <span>

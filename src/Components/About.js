@@ -48,6 +48,7 @@ export default function About(props) {
     <Helmet>
     <title>Sixty Seconds Logistics LLC - About</title>
         <meta name="description" content="Truck Logistic Company" />
+        <link rel='canonical' href='/About'/>
     </Helmet>
       <motion.div className="cursor"
         variants={variants}

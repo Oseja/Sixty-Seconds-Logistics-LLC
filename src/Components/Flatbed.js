@@ -50,6 +50,7 @@ export default function Flatbed(props) {
     <Helmet>
     <title>Sixty Seconds Logistics LLC - FlatBed</title>
         <meta name="description" content="Truck Logistic Company" />
+        <link rel='canonical' href='/Flatbed'/>
     </Helmet>
      <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"

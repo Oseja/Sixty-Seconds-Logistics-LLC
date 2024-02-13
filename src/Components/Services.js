@@ -47,6 +47,7 @@ export default function Services(props) {
   <Helmet>
     <title>Sixty Seconds Logistics LLC - Services</title>
         <meta name="description" content="Truck Logistic Company" />
+        <link rel='canonical' href='/Services'/>
     </Helmet>
     <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
       <motion.div className="cursor"

@@ -49,6 +49,7 @@ export default function Dryvan(props) {
     <Helmet>
     <title>Sixty Seconds Logistics LLC - Dryvan</title>
         <meta name="description" content="Truck Logistic Company" />
+        <link rel='canonical' href='/Dryvan'/>
     </Helmet>
      <div onMouseEnter={textEnter} onMouseLeave={textLeave}>
         <motion.div className="cursor"
