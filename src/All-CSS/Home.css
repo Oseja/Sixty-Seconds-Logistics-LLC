@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     cursor: none;
 }
-.seperation{
+
+.seperation {
     height: 7px;
     background-color: rgba(207, 207, 207, 0.356);
     /* background-color: #ebebeb; */
@@ -15,39 +17,43 @@
     position: relative;
     z-index: 20;
 }
+
 .bannerSection {
     background: url(../assets/image.webp);
     -o-border-image: fill 0 -o-linear-gradient(#0003, #000000a4);
-       border-image: fill 0 -webkit-gradient(linear, left top, left bottom, from(#0003), to(#000000a4));
-       border-image: fill 0 linear-gradient(#0003, #000000a4);
+    border-image: fill 0 -webkit-gradient(linear, left top, left bottom, from(#0003), to(#000000a4));
+    border-image: fill 0 linear-gradient(#0003, #000000a4);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100vw;
     height: 80vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
-.BannerConent >:nth-child(1){
+
+.BannerConent>:nth-child(1) {
     font-size: 4vh;
     font-weight: bolder;
     color: white;
     padding: 10px 50px;
 }
-.BannerConent >:nth-child(2){
+
+.BannerConent>:nth-child(2) {
     font-size: 12px;
     text-wrap: wrap;
     font-weight: 400px;
     color: white;
     padding: 10px 50px;
 }
-.BannerConent button{
+
+.BannerConent button {
     font-size: 12px;
     text-align: center;
     font-weight: 400px;
@@ -58,44 +64,53 @@
     height: 3rem;
     margin: 10px 50px 0px 50px;
     border-radius: 8px;
-}   
-.BannerConent button:hover{
+}
+
+.BannerConent button:hover {
     background-color: black;
     color: white;
     -webkit-transition: .5s all ease-in-out;
     -o-transition: .5s all ease-in-out;
     transition: .5s all ease-in-out;
     font-weight: 600px;
-}  
+}
 
-.greetings{
+.greetings {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-width: 100vw;
     margin-top: 80px;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
-.greetingHeading span, .MainSection span, .TruckMain span, .workHeaading span, .priceMainHeading span, .driveeMainHeading span{
+
+.greetingHeading span,
+.MainSection span,
+.TruckMain span,
+.workHeaading span,
+.priceMainHeading span,
+.driveeMainHeading span {
     color: #5254ff;
 }
-.greetingHeading >:nth-child(1){
+
+.greetingHeading>:nth-child(1) {
     font-size: 3vh;
     text-wrap: wrap;
     padding: 0px 50px;
     /* padding-top: 70px; */
     /* width: 30vw; */
 }
-.greetingPara{
+
+.greetingPara {
     font-size: 14px;
     margin: 10px 0px;
     text-wrap: wrap;
@@ -105,125 +120,149 @@
 }
 
 
-.MainSection{
+.MainSection {
     max-width: 100vw;
 }
-.MainSection> :nth-child(1){
-text-align: center;
-padding-top: 50px;
-font-size: 4vh;
+
+.MainSection> :nth-child(1) {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 4vh;
 }
 
-.MainContent{
+.MainContent {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     max-width: 100vw;
     padding-top: 50px;
 }
-.MainRoket, .MainPhone, .MainLock, .MainWallet{
+
+.MainRoket,
+.MainPhone,
+.MainLock,
+.MainWallet {
     width: calc(100%-80px);
 }
-.MainRoket >:nth-child(1){
+
+.MainRoket>:nth-child(1) {
     color: #5254ff;
     font-size: 50px;
     position: relative;
     left: 50%;
     -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
     /* margin-left: 4.2rem; */
 }
-.MainRoket >:nth-child(2), .MainPhone >:nth-child(2), .MainLock >:nth-child(2), .MainWallet >:nth-child(2){
+
+.MainRoket>:nth-child(2),
+.MainPhone>:nth-child(2),
+.MainLock>:nth-child(2),
+.MainWallet>:nth-child(2) {
     font-size: 15px;
     padding: 10px 0px;
     text-align: center;
     text-wrap: wrap;
 }
-.MainRoket >:nth-child(3), .MainPhone >:nth-child(3),.MainLock >:nth-child(3) , .MainWallet >:nth-child(3){
+
+.MainRoket>:nth-child(3),
+.MainPhone>:nth-child(3),
+.MainLock>:nth-child(3),
+.MainWallet>:nth-child(3) {
     font-size: 10px;
     padding: 0px 50px;
     text-align: justify;
     text-wrap: wrap;
 }
-.MainPhone >:nth-child(1), .MainLock >:nth-child(1){
+
+.MainPhone>:nth-child(1),
+.MainLock>:nth-child(1) {
     color: #5254ff;
     font-size: 50px;
     position: relative;
     left: 50%;
     -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
 }
-.MainWallet >:nth-child(1){
+
+.MainWallet>:nth-child(1) {
     color: #5254ff;
     font-size: 50px;
     position: relative;
     left: 50%;
     -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
 }
-.TruckMain{
+
+.TruckMain {
     max-width: 100vw;
     padding-top: 110px;
 }
-.TruckMain >:nth-child(1){
+
+.TruckMain>:nth-child(1) {
     text-align: center;
     text-wrap: wrap;
     font-size: 3vh;
 }
 
-.dryVan{
+.dryVan {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     max-width: 100vw;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding: 40px 20px;
 }
-.dryVan img{
+
+.dryVan img {
     width: 40vw;
     height: 70vh;
 }
-.dryContent{
+
+.dryContent {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
-.dryContent h6{
+
+.dryContent h6 {
     font-size: 3vh;
     color: #5254ff;
     font-weight: 600;
 }
-.dryContentPara{
+
+.dryContentPara {
     font-size: 14px !important;
     text-align: justify !important;
     padding: 10px 20px 0px 20px !important;
 }
-.dryContent button{
+
+.dryContent button {
     font-size: 14px;
     text-align: center;
     font-weight: 400px;
@@ -234,7 +273,8 @@ font-size: 4vh;
     height: 3rem;
     border-radius: 8px;
 }
-.dryContent button:hover{
+
+.dryContent button:hover {
     background-color: black;
     color: white;
     border: 1px solid white;
@@ -243,67 +283,85 @@ font-size: 4vh;
     transition: .5s all ease-in-out;
     font-weight: 600px;
 }
-.priceMain, .driveeMain{
+
+.priceMain,
+.driveeMain {
     max-width: 100vw;
 }
-.priceMainHeading, .driveeMainHeading{
+
+.priceMainHeading,
+.driveeMainHeading {
     text-align: center;
     text-wrap: wrap;
     font-size: 4vh;
     margin-top: 110px;
 }
-.priceMainPara, .driveMainPara{
+
+.priceMainPara,
+.driveMainPara {
     text-align: justify;
     text-wrap: wrap;
     font-size: 12px;
     padding: 30px 100px;
 }
-.driveMainPara{
+
+.driveMainPara {
     text-align: center;
     text-wrap: wrap;
     font-size: 12px;
     padding: 20px 40px;
 }
-.priceCards, .driveCards{
+
+.priceCards,
+.driveCards {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-top: 40px;
 }
-.priceCardone ,.priceCardtwo, .priceCardthree{
+
+.priceCardone,
+.priceCardtwo,
+.priceCardthree {
     -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     width: 25rem;
     height: 450px;
     border-radius: 8px;
     position: relative;
     margin: 20px 20px;
 }
-span i{
+
+span i {
     color: #5254ff;
     position: relative;
     left: 50%;
     -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
     padding: 20px 0px;
     font-size: 5vh;
 }
-.priceCardone:hover ,.priceCardtwo:hover, .priceCardthree:hover{
+
+.priceCardone:hover,
+.priceCardtwo:hover,
+.priceCardthree:hover {
     scale: 1.05;
     -webkit-transition: .3s all linear;
     -o-transition: .3s all linear;
     transition: .3s all linear;
 }
-.priceCardone h2,.priceCardthree h2{
+
+.priceCardone h2,
+.priceCardthree h2 {
     font-size: 2vh;
     text-align: center;
     font-weight: bolder;
@@ -311,7 +369,8 @@ span i{
     background-color: #5254ff;
     color: white;
 }
-.priceCardtwo h2{
+
+.priceCardtwo h2 {
     font-size: 2vh;
     text-align: center;
     font-weight: bolder;
@@ -319,35 +378,52 @@ span i{
     background-color: #5254ff;
     color: white;
 }
-.priceCardone p, .priceCardtwo p, .priceCardthree p{
+
+.priceCardone p,
+.priceCardtwo p,
+.priceCardthree p {
     text-align: justify;
     font-size: 12px;
     text-wrap: wrap;
     padding: 20px 20px;
     border-bottom: 2px solid #5254ff;
 }
-.driveCardone, .driveCardtwo, .driveCardthree, .driveCardfour{
+
+.driveCardone,
+.driveCardtwo,
+.driveCardthree,
+.driveCardfour {
     -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     width: 20rem;
     height: 350px;
     border-radius: 8px;
     position: relative;
     margin: 20px 20px;
 }
-.driveCardone:hover, .driveCardtwo:hover, .driveCardthree:hover, .driveCardfour:hover{
+
+.driveCardone:hover,
+.driveCardtwo:hover,
+.driveCardthree:hover,
+.driveCardfour:hover {
     scale: 1.05;
     -webkit-transition: .3s all linear;
     -o-transition: .3s all linear;
     transition: .3s all linear;
 }
-.driveCardone h1, .driveCardtwo h1, .driveCardthree h1, .driveCardfour h1{
+
+.driveCardone h1,
+.driveCardtwo h1,
+.driveCardthree h1,
+.driveCardfour h1 {
     font-size: 3vh;
     text-align: center;
     font-weight: bold;
     padding-top: 15px;
 }
-.driveCardtwo h5, .driveCardfour h5{
+
+.driveCardtwo h5,
+.driveCardfour h5 {
     font-size: 2vh;
     text-align: center;
     font-weight: bolder;
@@ -355,7 +431,9 @@ span i{
     background-color: #5254ff;
     color: white;
 }
-.driveCardone h5, .driveCardthree h5{
+
+.driveCardone h5,
+.driveCardthree h5 {
     font-size: 2vh;
     text-align: center;
     font-weight: bolder;
@@ -363,17 +441,23 @@ span i{
     background-color: #5254ff;
     color: white;
 }
-.driveCardone p, .driveCardtwo p, .driveCardthree p, .driveCardfour p{
+
+.driveCardone p,
+.driveCardtwo p,
+.driveCardthree p,
+.driveCardfour p {
     text-align: justify;
     text-wrap: wrap;
     padding: 30px 10px;
     font-size: 12px;
 }
-.driveCardone a{
+
+.driveCardone a {
     text-decoration: none;
     color: #5254ff;
 }
-.cursor{
+
+.cursor {
     height: 32px;
     width: 32px;
     border-radius: 50%;
@@ -385,104 +469,115 @@ span i{
     pointer-events: none;
     z-index: 10000;
 }
-#testimain{
+
+#testimain {
     max-width: 100vw;
     background: url(https://i.pinimg.com/564x/75/05/e6/7505e630b199f8eacfc21acb3d5dfb47.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     -o-border-image: fill 0 -o-linear-gradient(#0003, #000000a4);
-       border-image: fill 0 -webkit-gradient(linear, left top, left bottom, from(#0003), to(#000000a4));
-       border-image: fill 0 linear-gradient(#0003, #000000a4);
+    border-image: fill 0 -webkit-gradient(linear, left top, left bottom, from(#0003), to(#000000a4));
+    border-image: fill 0 linear-gradient(#0003, #000000a4);
     background-attachment: fixed;
 }
-  .testimonials{
+
+.testimonials {
     width: 100%;
     margin-top: 110px;
     height: 60vh;
     color: white;
     background-color: rgba(255, 255, 255, 0.247);
     -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
-    
-  }
-  .testimonials h1{
+    backdrop-filter: blur(2px);
+
+}
+
+.testimonials h1 {
     font-size: 4vh;
     text-align: center;
     color: #5254ff;
-  }
-  .userOne{
+}
+
+.userOne {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .userOne img{
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.userOne img {
     border-radius: 50%;
     -o-object-fit: cover;
-       object-fit: cover;
-   
-  }
-  .userOne h5{
+    object-fit: cover;
+
+}
+
+.userOne h5 {
     font-size: 4vh;
     text-align: center;
     text-wrap: wrap;
     padding: 20px 0px;
-  }
-  .userOne p{
+}
+
+.userOne p {
     font-size: 12px;
     text-align: center;
     text-wrap: wrap;
     padding: 10px 0px;
-  }
-  .userOne span{
+}
+
+.userOne span {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .userOne span i{
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.userOne span i {
     color: orange;
     height: 20px;
     padding: 10px 0px;
-  }
-  .swiper {
+}
+
+.swiper {
     width: 100%;
     height: 100%;
-  }
-  
-  .swiper-slide {
+}
+
+.swiper-slide {
     text-align: center;
     font-size: 18px;
     /* background: #fff; */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }  
-  .autoplay-progress {
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.autoplay-progress {
     position: absolute;
     right: 16px;
     bottom: 16px;
@@ -493,16 +588,16 @@ span i{
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     font-weight: bold;
     color: var(--swiper-theme-color);
-  }
-  
-  .autoplay-progress svg {
+}
+
+.autoplay-progress svg {
     --progress: 0;
     position: absolute;
     left: 0;
@@ -516,122 +611,164 @@ span i{
     stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
     stroke-dasharray: 125.6;
     -webkit-transform: rotate(-90deg);
-        -ms-transform: rotate(-90deg);
-            transform: rotate(-90deg);
-  }
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.MainRoket>:nth-child(3),
+    .MainPhone>:nth-child(3),
+    .MainLock>:nth-child(3),
+    .MainWallet>:nth-child(3) {
+        font-size: 10px;
+        padding: 10px 20px;
+        text-align: center;
+        text-wrap: wrap;
+    }
 @media screen and (max-width: 850px) {
-    .cursor{
+    .cursor {
         display: none;
 
     }
-    .bannerSection{
+
+    .bannerSection {
         -o-object-position: center;
-           object-position: center;
+        object-position: center;
     }
-    .priceMainPara{
+
+    .priceMainPara {
         padding: 10px 20px;
     }
-    .BannerConent >:nth-child(1){
-    font-size: 3vh;
-    padding: 0px 10px;
+
+    .BannerConent>:nth-child(1) {
+        font-size: 3vh;
+        padding: 0px 10px;
     }
-    .BannerConent >:nth-child(2){
-    font-size: 1.2vh;
-    padding: 0px 10px;
+
+    .BannerConent>:nth-child(2) {
+        font-size: 1.2vh;
+        padding: 0px 10px;
     }
-    .BannerConent Button{
-    font-size: 1.5vh;
-    margin: 0px 20px;
-    width: 12vh;
+
+    .BannerConent Button {
+        font-size: 1.5vh;
+        margin: 0px 20px;
+        width: 12vh;
     }
-    .greetings{
+
+    .greetings {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         max-width: 100vw;
     }
-    .greetingHeading >:nth-child(1){
+
+    .greetingHeading>:nth-child(1) {
         width: 100%;
         text-align: left;
     }
-    .greetingPara{
+
+    .greetingPara {
         width: 100%;
         text-align: justify;
         padding: 20px 20px;
     }
-    .MainContent{
+
+    .MainContent {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
-    .MainPhone,.MainWallet,.MainLock{
+
+    .MainPhone,
+    .MainWallet,
+    .MainLock {
         padding: 30px 0px;
     }
-    .MainRoket >:nth-child(3), .MainPhone >:nth-child(3),.MainLock >:nth-child(3) , .MainWallet >:nth-child(3){
+
+    /* .MainRoket>:nth-child(3),
+    .MainPhone>:nth-child(3),
+    .MainLock>:nth-child(3),
+    .MainWallet>:nth-child(3) {
         font-size: 10px;
         padding: 10px 20px;
-        text-align: justify;
+        text-align: center;
         text-wrap: wrap;
-    }
-    .dryVan{
+    } */
+
+    .dryVan {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
-    .dryVan img{
+
+    .dryVan img {
         width: 50vh;
         height: 50vh;
     }
-    .dryContent{
+
+    .dryContent {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
-    .priceCardone button, .priceCardtwo button, .priceCardthree button{
+
+    .priceCardone button,
+    .priceCardtwo button,
+    .priceCardthree button {
         margin-top: 30px;
     }
-    .userOne p{
+
+    .userOne p {
         font-size: 1vh;
         text-wrap: wrap;
         padding: 0px 20px;
         text-align: justify;
     }
 
-    #testimain{
-        background-attachment: scroll ;
+    #testimain {
+        background-attachment: scroll;
     }
-    .driveMainPara{
+
+    .driveMainPara {
         text-align: justify;
     }
 }
-    /* @media screen and (min-width: 850px) and (max-width: 1280px) {
-      
-    } */
+@media screen and (max-width: 570px){
+    .MainRoket>:nth-child(3),
+    .MainPhone>:nth-child(3),
+    .MainLock>:nth-child(3),
+    .MainWallet>:nth-child(3) {
+        font-size: 10px;
+        padding: 10px 20px;
+        text-align: justify;
+        text-wrap: wrap;
+    }
+}

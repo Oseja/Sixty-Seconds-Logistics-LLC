@@ -123,15 +123,15 @@ export default function Contact(props) {
           <div className="IconsMain">
             <div className="phone" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <i data-aos="fade-up" data-aos-delay="500" data-aos-duration="800" className='fas fa-phone'></i><span>Phone Number:</span><br />
-              <Link to="tel:+1(832) 422-7704" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}>+1(832) 422-7704</Link>
+              <Link to="tel:+1(832) 263-1799" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}>(832) 263-1799</Link>
             </div>
             <div className="address" data-aos="fade-up" data-aos-delay="600" data-aos-duration="900" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <i className='fas fa-map-marker-alt' data-aos="fade-up" data-aos-delay="700" data-aos-duration="800"></i><span>Address:</span> <br />
-              <h1 style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}>2525 S Voss Rd, Houston TX 77057.</h1>
+              <h1 style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}>2323 S Voss Rd, Suite # 110, Houston, TX 77057</h1>
             </div>
             <div className="email" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <i className='fas fa-envelope' data-aos="fade-up" data-aos-delay="900" data-aos-duration="800"></i><span>Email:</span> <br />
-              <Link to="mailto:support@sixtysecondslogistics.com" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}>support@sixtysecondslogistics.com</Link>
+              <Link to="mailto:Dispatch@sixtysecondslogistics.com" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}>Dispatch@sixtysecondslogistics.com</Link>
             </div>
           </div>
         </div>

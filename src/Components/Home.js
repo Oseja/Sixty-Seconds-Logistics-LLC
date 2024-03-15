@@ -1,16 +1,16 @@
-import React, { useEffect, useState, useRef} from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { motion } from 'framer-motion';
 import '../All-CSS/Home.css'
-import  Dryvan from '../assets/Dryvan.webp'
-import  Poweronly from '../assets/Poweronly.webp'
-import  Reefer from '../assets/Reefer.webp'
-import  Flatbed from '../assets/Flatbed.webp'
-import  Boxtruck2 from '../assets/Boxtruck2.webp'
-import  hotshorttt1 from '../assets/hotshorttt1.webp'
-import  user88 from '../assets/user88.webp'
-import  user30 from '../assets/user30.webp'
-import  user11 from '../assets/user11.webp'
-import  user9 from '../assets/user9.webp'
+import Dryvan from '../assets/Dryvan.webp'
+import Poweronly from '../assets/Poweronly.webp'
+import Reefer from '../assets/Reefer.webp'
+import Flatbed from '../assets/Flatbed.webp'
+import Boxtruck2 from '../assets/Boxtruck2.webp'
+import hotshorttt1 from '../assets/hotshorttt1.webp'
+import user88 from '../assets/user88.webp'
+import user30 from '../assets/user30.webp'
+import user11 from '../assets/user11.webp'
+import user9 from '../assets/user9.webp'
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -65,17 +65,17 @@ export default function Home(props) {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
 
-useEffect(()=>{
-  AOS.init({duration: 2000});
-},[]);
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
   return (
     <>
-    <Helmet>
-    <title>Sixty Seconds Logistics LLC - Home</title>
+      <Helmet>
+        <title>Sixty Seconds Logistics LLC - Home</title>
         <meta name="description" content="Truck Logistic Company" />
-        <link rel='canonical' href='/'/>
-    </Helmet>
+        <link rel='canonical' href='/' />
+      </Helmet>
       <section>
         <div className="bannerSection">
           <div className="BannerConent" onMouseEnter={textEnter} onMouseLeave={textLeave}>
@@ -85,7 +85,7 @@ useEffect(()=>{
           </div>
         </div>
       </section>
-      <section id='greetingss'> 
+      <section id='greetingss'>
         <div className="greetings">
           <div className="greetingHeading" onMouseEnter={textEnter} onMouseLeave={textLeave}>
             <h1 ata-aos="fade-up">Welcome To <span>Sixty Seconds Logistitcs LLC</span></h1>
@@ -100,90 +100,90 @@ useEffect(()=>{
         <div className="TruckMain" onMouseEnter={textEnter} onMouseLeave={textLeave} data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
           <h1>Truck Dispatch Service Company for Owner Operators and <span>Trucking Companies:</span></h1>
         </div>
-         <Swiper
-         data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
-         style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} 
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-        <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <img src={Dryvan} alt="Dry Van" loading='lazy'/>
-            <div className="dryContent">
-            <h6>Dry Van</h6>
-            <p className='dryContentPara'>"Dry van truck: an enclosed commercia vehicle for transporting general cargo, protecting it from weather and theft."</p>
-            <Link to="/Dryvan"><button>Read More &gt;</button></Link>
+        <Swiper
+          data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
+          style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          onAutoplayTimeLeft={onAutoplayTimeLeft}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <img src={Dryvan} alt="Dry Van" loading='lazy' />
+              <div className="dryContent">
+                <h6>Dry Van</h6>
+                <p className='dryContentPara'>"Dry van truck: an enclosed commercia vehicle for transporting general cargo, protecting it from weather and theft."</p>
+                <Link to="/Dryvan"><button>Read More &gt;</button></Link>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <img src={Reefer} alt="Reefer" loading='lazy'/>
-            <div className="dryContent">
-            <h6>Reefer</h6>
-            <p className='dryContentPara'>"Reefer truck: a refrigerated commercial vehicle for transporting temperature-sensitive cargo"</p>
-            <Link to="/Reefer"><button>Read More &gt;</button></Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <img src={Reefer} alt="Reefer" loading='lazy' />
+              <div className="dryContent">
+                <h6>Reefer</h6>
+                <p className='dryContentPara'>"Reefer truck: a refrigerated commercial vehicle for transporting temperature-sensitive cargo"</p>
+                <Link to="/Reefer"><button>Read More &gt;</button></Link>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <img src={Flatbed} alt="Flatbed" loading='lazy'/>
-            <div className="dryContent">
-            <h6>Flatbed</h6>
-            <p className='dryContentPara'>"Flatbed truck: open-bed commercial vehicle for transporting large or unconventional loads."</p>
-            <Link to="/Flatbed"><button>Read More &gt;</button></Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <img src={Flatbed} alt="Flatbed" loading='lazy' />
+              <div className="dryContent">
+                <h6>Flatbed</h6>
+                <p className='dryContentPara'>"Flatbed truck: open-bed commercial vehicle for transporting large or unconventional loads."</p>
+                <Link to="/Flatbed"><button>Read More &gt;</button></Link>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <img src={Poweronly} alt="Power Only" loading='lazy'/>
-            <div className="dryContent">
-            <h6>Power Only</h6>
-            <p className='dryContentPara'>"Power Only truck: a trucking service providing only the tractor to haul trailers owned by another company."</p>
-            <Link to="/Poweronly"><button>Read More &gt;</button></Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <img src={Poweronly} alt="Power Only" loading='lazy' />
+              <div className="dryContent">
+                <h6>Power Only</h6>
+                <p className='dryContentPara'>"Power Only truck: a trucking service providing only the tractor to haul trailers owned by another company."</p>
+                <Link to="/Poweronly"><button>Read More &gt;</button></Link>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <img src={Boxtruck2} alt="Box Truck" loading='lazy'/>
-            <div className="dryContent">
-            <h6>Box Truck</h6>
-            <p className='dryContentPara'>"Box truck: a commercial vehicle with an enclosed cargo space, suitable for transporting various goods securely."</p>
-            <Link to="/Boxtruck"><button>Read More &gt;</button></Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <img src={Boxtruck2} alt="Box Truck" loading='lazy' />
+              <div className="dryContent">
+                <h6>Box Truck</h6>
+                <p className='dryContentPara'>"Box truck: a commercial vehicle with an enclosed cargo space, suitable for transporting various goods securely."</p>
+                <Link to="/Boxtruck"><button>Read More &gt;</button></Link>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
-            <img src={hotshorttt1} alt="Hot Short" loading='lazy'/>
-            <div className="dryContent">
-            <h6>Hot Short</h6>
-            <p className='dryContentPara'>"Hot shot truck: a smaller, agile commercial vehicle offering expedited shipping for urgent or smaller loads."</p>
-            <Link to="/Hotshort"><button>Read More &gt;</button></Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="dryVan" onMouseEnter={textEnter} onMouseLeave={textLeave}>
+              <img src={hotshorttt1} alt="Hot Short" loading='lazy' />
+              <div className="dryContent">
+                <h6>Hot Short</h6>
+                <p className='dryContentPara'>"Hot shot truck: a smaller, agile commercial vehicle offering expedited shipping for urgent or smaller loads."</p>
+                <Link to="/Hotshort"><button>Read More &gt;</button></Link>
+              </div>
             </div>
+          </SwiperSlide>
+          <div className="autoplay-progress" slot="container-end">
+            <svg viewBox="0 0 48 48" ref={progressCircle}>
+              <circle cx="24" cy="24" r="20"></circle>
+            </svg>
+            <span ref={progressContent}></span>
           </div>
-        </SwiperSlide>
-        <div className="autoplay-progress" slot="container-end">
-          <svg viewBox="0 0 48 48" ref={progressCircle}>
-            <circle cx="24" cy="24" r="20"></circle>
-          </svg>
-          <span ref={progressContent}></span>
-        </div>
-      </Swiper>
+        </Swiper>
       </section>
 
       <div className="seperation"></div>
@@ -200,17 +200,17 @@ useEffect(()=>{
               <h5>Get in touch with us</h5>
               <p>Apply using this form or by phone call: <Link to="tel:+1(832) 422-7704">+1(832) 422-7704</Link></p>
             </div>
-            <div className="driveCardtwo" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}   onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <div className="driveCardtwo" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <h1>Step 2</h1>
               <h5>Send us your documentation</h5>
               <p>Make sure you have all the necessary documents ( MC certificate, W9 form, insurance )</p>
             </div>
-            <div className="driveCardthree" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}  onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <div className="driveCardthree" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <h1>Step 3</h1>
               <h5>Sign the documentation</h5>
               <p>Sign the dispatch agreement that gives us a right to represent the customer's company on its behalf among different people.</p>
             </div>
-            <div className="driveCardfour" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}  onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <div className="driveCardfour" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <h1>Step 4</h1>
               <h5>That's all. Let's drive and make money!</h5>
               <p>We are all set and we now start to get you the best high paying loads.</p>
@@ -257,12 +257,12 @@ useEffect(()=>{
               <h2 data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">Save your time</h2>
               <p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">We can handle all the services that a trucking company or an owner-operator may need. From paperwork to billing, we can count on us. This way, you will just pick and deliver the loads that we chose together.</p>
             </div>
-            <div className="priceCardtwo" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}  onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <div className="priceCardtwo" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <span><i className='fas fa-truck'></i></span>
               <h2 data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">Benefit from personalized plans</h2>
               <p data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">We have a wide range of plan options. The wishes and needs of companies are different, so we can’t just apply a general method. Communication is the key to amazing results in the shortest period of time possible.</p>
             </div>
-            <div className="priceCardthree" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }}  onMouseEnter={textEnter} onMouseLeave={textLeave}>
+            <div className="priceCardthree" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000" style={{ backgroundColor: props.mode === 'light' ? '#ebebeb' : '#222', color: props.mode === 'light' ? 'black' : 'white' }} onMouseEnter={textEnter} onMouseLeave={textLeave}>
               <span><i className='fas fa-credit-card'></i></span>
               <h2 data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">Increase your profit</h2>
               <p data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">A freight dispatcher finds you high paid loads and negotiates in your favor. So, you’ll work less and earn more. They work on your behalf and make sure that you increase your profit as much as possible. Also, our profesionist track the daily rates and make sure that the price of the load is well defined. We try to offer you the best freight rates!</p>
@@ -272,89 +272,89 @@ useEffect(()=>{
       </section>
       <div className="seperation m-10"></div>
       <section id='testimain'>
-       <div className="testimonials" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-        <h1>Testimonials</h1>
-      
-        <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        onAutoplayTimeLeft={onAutoplayTimeLeft}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-        <div className="userOne">
-          <img src={user88} alt="man" loading='lazy' />
-          <h5>Robert</h5>
-          <p>"Sixty Seconds Logistics secures top-notch loads at unbeatable prices, keeping our trucks moving and profits soaring. A game-changer for our business!"</p>
-          <span>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-          </span>
+        <div className="testimonials" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+          <h1>Testimonials</h1>
+
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            onAutoplayTimeLeft={onAutoplayTimeLeft}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className="userOne">
+                <img src={user88} alt="man" loading='lazy' />
+                <h5>Robert</h5>
+                <p>"Sixty Seconds Logistics secures top-notch loads at unbeatable prices, keeping our trucks moving and profits soaring. A game-changer for our business!"</p>
+                <span>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                </span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="userOne">
+                <img src={user9} alt="man" loading='lazy' />
+                <h5>John</h5>
+                <p>"At Sixty Seconds Logistics, top prices for truck loads are a given. Quick, efficient, and cost-effective – they're our go-to for seamless logistics!"</p>
+                <span>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                </span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="userOne">
+                <img src={user30} alt="man" loading='lazy' />
+                <h5>Harry</h5>
+                <p>"At Sixty Seconds Logistics, top prices, fast. They've got the winning formula for our truck loads – quick, efficient, and cost-friendly!"</p>
+                <span>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                </span>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="userOne">
+                <img src={user11} alt="man" loading='lazy' />
+                <h5>Tom</h5>
+                <p>"Sixty Seconds Logistics: Fast prices, faster service. They nail the best deals for our truck loads, keeping our business moving at full speed!"</p>
+                <span>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                  <i className='fas fa-star'></i>
+                </span>
+              </div>
+            </SwiperSlide>
+            <div className="autoplay-progress" slot="container-end">
+              <svg viewBox="0 0 48 48" ref={progressCircle}>
+                <circle cx="24" cy="24" r="20"></circle>
+              </svg>
+              <span ref={progressContent}></span>
+            </div>
+          </Swiper>
+
         </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="userOne">
-          <img src={user9} alt="man" loading='lazy'/>
-          <h5>John</h5>
-          <p>"At Sixty Seconds Logistics, top prices for truck loads are a given. Quick, efficient, and cost-effective – they're our go-to for seamless logistics!"</p>
-          <span>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-          </span>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="userOne">
-          <img src={user30} alt="man" loading='lazy'/>
-          <h5>Harry</h5>
-          <p>"At Sixty Seconds Logistics, top prices, fast. They've got the winning formula for our truck loads – quick, efficient, and cost-friendly!"</p>
-          <span>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-          </span>
-        </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className="userOne">
-          <img src={user11} alt="man" loading='lazy'/>
-          <h5>Tom</h5>
-          <p>"Sixty Seconds Logistics: Fast prices, faster service. They nail the best deals for our truck loads, keeping our business moving at full speed!"</p>
-          <span>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-            <i className='fas fa-star'></i>
-          </span>
-        </div>
-        </SwiperSlide>
-        <div className="autoplay-progress" slot="container-end">
-          <svg viewBox="0 0 48 48" ref={progressCircle}>
-            <circle cx="24" cy="24" r="20"></circle>
-          </svg>
-          <span ref={progressContent}></span>
-        </div>
-      </Swiper>
-      
-       </div>
       </section>
     </>
   )

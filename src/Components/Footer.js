@@ -54,14 +54,14 @@ export default function Footer(props) {
                             <h5>Sixty Seconds Logistics LLC</h5>
                             <li
                                 className='footer-links-contact'><i className='fas fa-map-marker-alt'></i><span>SIXTY SECONDS LOGISTICS LLC. <br />
-                                    2525 S Voss Rd, Houston TX 77057. </span></li>
+                                    2323 S Voss Rd, Suite # 110, Houston, TX 77057</span></li>
                             <li className='footer-links-contact'><i className='fas fa-envelope'></i>
-                                <span className='maillink'><Link to="mailto:support@sixtysecondslogistics.com">support@sixtysecondslogistics.com</Link></span></li>
+                                <span className='maillink'><Link to="mailto:Dispatch@sixtysecondslogistics.com">Dispatch@sixtysecondslogistics.com</Link></span></li>
                             <li className='footer-links-contact'><i className='fas fa-globe'></i>
                                 <span className='weblink'><Link to="www.sixtysecondslogistics.com">www.sixtysecondslogistics.com
                                 </Link></span></li>
                             <li className='footer-links-contact'><i className='fas fa-phone'></i>
-                                <span className='phonelink'><Link to="tel:+1(832) 422-7704">+1(832) 422-7704</Link></span></li>
+                                <span className='phonelink'><Link to="tel:+1(832) 263-1799">(832) 263-1799</Link></span></li>
                         </ul>
                     </div>
                     <div className="footer-socials">
