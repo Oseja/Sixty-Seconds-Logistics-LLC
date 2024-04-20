@@ -34,7 +34,7 @@ const Navbar = ({ mode, toggleMode }) => {
           <i className={`${clicked ? "fas fa-times" : "fas fa-bars"} ${mode === 'dark' ? 'dark-mode-text' : ''}`} ></i>
         </div>
         <ul className={clicked ? "nav-menu active" : "nav-menu"}>
-          {MenuData.map((item, index) => (
+          {MenuData.map((item,  index) => (
             <li key={index}>
               <Link
                 exact

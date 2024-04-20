@@ -15,6 +15,7 @@ import Hotshort from './Components/Hotshort'
 import Freight from './Components/Freight'
 import Rate from './Components/Rate'
 import CircleLoader from "react-spinners/CircleLoader";
+import ScrollToTop from './Components/ScrollToTop'
 import './App.css'
 export default function App() {
 
@@ -55,6 +56,7 @@ export default function App() {
     :
      <BrowserRouter>
      <Navbar mode={mode} toggleMode={toggleMode}/>
+     <ScrollToTop />
         <Routes>
         <Route path="/" element={<Home mode={mode} toggleMode={toggleMode}/>} />
         <Route path="/About" element={<About mode={mode} toggleMode={toggleMode} />} />
